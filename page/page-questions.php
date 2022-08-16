@@ -12,10 +12,10 @@
                                 <!-- </a> -->
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <a class="btn-primary" target="_blank" href="https://forms.gle/J1XoabHnXoihrPt17">สมัครแข่งขัน ม.ต้น</a>
+                                        <a class="btn-secondary  btn  disabled" tabindex="-1" role="button" aria-disabled="true" target="_blank" href="https://forms.gle/J1XoabHnXoihrPt17" >ปิดรับสมัครแข่งขัน ม.ต้น</a>
                                     </div>
                                     <div class="col-lg-6">
-                                        <a class="btn-primary" target="_blank" href="https://forms.gle/1XM6JYi1ZNVfdJxr7">สมัครแข่งขัน ม.ปลาย</a>
+                                        <a class="btn-secondary  btn  disabled" tabindex="-1" role="button" aria-disabled="true" target="_blank" href="https://forms.gle/1XM6JYi1ZNVfdJxr7">ปิดรับสมัครแข่งขัน ม.ปลาย</a>
                                     </div>
                                 </div>
                             </div>

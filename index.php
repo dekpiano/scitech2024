@@ -5,13 +5,21 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>สัปดาห์วิทยาศาสตร์แห่งชาติ | โรงเรียนสวนกุหลาบวิทยาลัย (จิรประวัติ) นครสวรรค์</title>
+    <title>สัปดาห์วิทยาศาสตร์แห่งชาติ 2656 | โรงเรียนสวนกุหลาบวิทยาลัย (จิรประวัติ) นครสวรรค์</title>
     <meta content="เว็บไซต์กลุ่มสาระการเรียนรู้วิทยาศาสตร์และเทคโนโลยี โรงเรียนสวนกุหลาบวิทยาลัย (จิรประวัติ) นครสวรรค์" name="description">
     <meta content="วิทยาศาสตร์และเทคโนโลยี,จิรประวัติ,นครสวรรค์" name="keywords">
+    
+    <meta property="og:url" content="https://scitech.skj.ac.th/" />
+    <meta property="og:type" content="Education" />
+    <meta property="og:title" content="สัปดาห์วิทยาศาสตร์แห่งชาติ 2565 | โรงเรียนสวนกุหลาบวิทยาลัย (จิรประวัติ) นครสวรรค์" />
+    <meta property="og:description" content="เว็บไซต์กลุ่มสาระการเรียนรู้วิทยาศาสตร์และเทคโนโลยี โรงเรียนสวนกุหลาบวิทยาลัย (จิรประวัติ) นครสวรรค์" />
+    <meta property="og:image"
+        content="https://scitech.skj.ac.th/img/banner-facebook.png" />
 
     <!-- Favicons -->
     <link href="img/1.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    
 
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -80,7 +88,7 @@
     <header id="header" class="header fixed-top" data-scrollto-offset="0">
         <div class="container-fluid d-flex align-items-center justify-content-between">
 
-            <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
+            <a href="index.php" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
                 <!-- Uncomment the line below if you also wish to use an image logo -->
                 <img src="img/2.png" alt="" style="max-height: 65px;">
                 <h4 class="d-none d-md-block">กลุ่มสาระการเรียนรู้วิทยาศาสตร์และเทคโนโลยี <br> <small>โรงเรียนสวนกุหลาบวิทยาลัย (จิรประวัติ) นครสวรรค์</small></h4>
@@ -88,18 +96,17 @@
 
             <nav id="navbar" class="navbar">
                 <ul>
-
-                    <li><a class="nav-link scrollto" href="index.html#hero-animated">หน้าแรก</a></li>
-                    <li><a class="nav-link scrollto" href="index.html#services">รูปแบบการแข่งขัน</a></li>
-                    <li><a class="nav-link scrollto" href="index.html#cta">กำหนดการ</a></li>
-                    <li><a class="nav-link scrollto" href="index.html#recent-blog-posts">นิทรรศการ</a></li>
-
+                    <li><a class="nav-link scrollto" href="index.php#hero-animated">หน้าแรก</a></li>
+                    <li><a class="nav-link scrollto" href="index.php#services">รูปแบบการแข่งขัน</a></li>
+                    <li><a class="nav-link scrollto" href="index.php#cta">กำหนดการ</a></li>
+                    <li><a class="nav-link scrollto" href="index.php#recent-blog-posts">นิทรรศการ</a></li>
+                    <li><a class="nav-link scrollto" href="page-results.php">ผลการแข่งขัน</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle d-none"></i>
             </nav>
             <!-- .navbar -->
 
-            <a class="btn-getstarted scrollto" href="index.html#contact">ติดต่อ</a>
+            <a class="btn-getstarted scrollto" href="index.php#contact">ติดต่อ</a>
 
         </div>
     </header>
@@ -295,10 +302,10 @@
                     <div class="col-lg-2 col-md-6 footer-links">
                         <h4>ลิ้งก์</h4>
                         <ul>
-                            <li><i class="bi bi-chevron-right"></i> <a href="index.html#hero-animated">หน้าแรก</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="index.html#services">รูปแบบการแข่งขัน</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="index.html#cta">กำหนดการ</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="index.html#recent-blog-posts">นิทรรศการ</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="index.php#hero-animated">หน้าแรก</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="index.php#services">รูปแบบการแข่งขัน</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="index.php#cta">กำหนดการ</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="index.php#recent-blog-posts">นิทรรศการ</a></li>
                         </ul>
                     </div>
 
