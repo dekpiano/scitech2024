@@ -12,10 +12,10 @@
 
     <meta property="og:url" content="https://scitech.skj.ac.th/page-results.php" />
     <meta property="og:type" content="Education" />
-    <meta property="og:title" content="ผลการแข่งขันสัปดาห์วิทยาศาสตร์ 2565 | โรงเรียนสวนกุหลาบวิทยาลัย (จิรประวัติ) นครสวรรค์" />
+    <meta property="og:title"
+        content="ผลการแข่งขันสัปดาห์วิทยาศาสตร์ 2565 | โรงเรียนสวนกุหลาบวิทยาลัย (จิรประวัติ) นครสวรรค์" />
     <meta property="og:description" content="วิทยาศาสตร์และเทคโนโลยี,จิรประวัติ,นครสวรรค์" />
-    <meta property="og:image"
-        content="https://scitech.skj.ac.th/img/banner-result.png" />
+    <meta property="og:image" content="https://scitech.skj.ac.th/img/banner-result.png" />
 
     <!-- Favicons -->
     <link href="img/1.png" rel="icon">
@@ -39,6 +39,8 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet">
+    <link href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" rel="stylesheet">
+
 
     <!-- =======================================================
   * Template Name: HeroBiz - v2.2.0
@@ -85,6 +87,8 @@
 </head>
 
 <body>
+
+    <?php include_once('php/php-results.php'); ?>
 
     <!-- ======= Header ======= -->
     <header id="header" class="header fixed-top" data-scrollto-offset="0">
@@ -151,7 +155,33 @@
                                 </h3>
                                 <div id="Quizz-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                                     <div class="accordion-body">
-                                        กำลังแข่งขัน ...
+
+                                        <table class="table myTable">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="row">#</th>
+                                                    <th scope="col">รางวัล</th>
+                                                    <th scope="col">ชื่อ - นาสกุล</th>
+                                                    <th scope="col">ระดับชั้น</th>
+                                                    <th scope="col">เกียรติบัตร</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <?php foreach ($values_QT as $key => $v_values_QT) : 
+                                                ?>
+                                                <tr>
+                                                    <th scope="row"><?=$key+1?></th>
+                                                    <th scope="row" style="width:30%"><?=$v_values_QT[6];?></th>
+                                                    <td style="width:30%">
+                                                        <?=$v_values_QT[1].$v_values_QT[2].' '.$v_values_QT[3];?></td>
+                                                    <td><?=$v_values_QT[4];?></td>
+                                                    <td> <a href="page-certificate.php?name=<?=$v_values_QT[1].$v_values_QT[2].' '.$v_values_QT[3];?>&result=<?=$v_values_QT[6];?>"
+                                                            target="_blank" rel="noopener noreferrer">ดาวโหลด</a> </td>
+                                                </tr>
+                                                <?php endforeach ;?>
+                                            </tbody>
+                                        </table>
+
                                     </div>
                                 </div>
                             </div><!-- # Faq item-->
@@ -165,7 +195,32 @@
                                 </h3>
                                 <div id="Quizz-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                                     <div class="accordion-body">
-                                        กำลังแข่งขัน ...
+
+                                        <table class="table myTable">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="row">#</th>
+                                                    <th scope="col">รางวัล</th>
+                                                    <th scope="col">ชื่อ - นาสกุล</th>
+                                                    <th scope="col">ระดับชั้น</th>
+                                                    <th scope="col">เกียรติบัตร</th>
+                                                </tr>
+                                            </thead>
+                                            <?php foreach ($values_QP as $key => $v_values_QP) : 
+                                                ?>
+                                            <tr>
+                                                <th scope="row"><?=$key+1?></th>
+                                                <th scope="row" style="width:30%"><?=$v_values_QP[6];?></th>
+                                                <td style="width:30%"><?=$v_values_QP[1].$v_values_QP[2].' '.$v_values_QP[3];?></td>
+                                                <td><?=$v_values_QP[4];?></td>
+                                                <td>
+                                                    <a href="page-certificate.php?name=<?=$v_values_QP[1].$v_values_QP[2].' '.$v_values_QP[3];?>&result=<?=$v_values_QP[6];?>"
+                                                        target="_blank" rel="noopener noreferrer">ดาวโหลด</a>
+                                                </td>
+                                            </tr>
+                                            <?php endforeach ;?>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div><!-- # Faq item-->
@@ -557,6 +612,7 @@
     <div id="preloader"></div>
 
     <!-- Vendor JS Files -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -564,8 +620,16 @@
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
 
+    <script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    <script>
+    $(document).ready(function() {
+        $('.myTable').DataTable();
+    });
+    </script>
 </body>
 
 </html>
