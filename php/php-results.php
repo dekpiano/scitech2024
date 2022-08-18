@@ -23,10 +23,6 @@ $response_QT = $service->spreadsheets_values->get($spreadsheetId, $range_QT);
 $values_QT = $response_QT->getValues();
 //echo '<pre>'; print_r($values);
 
-$range_QP = 'ตอบคำถามวิทย์!I3:O50'; // here we use the name of the Sheet to get all the rows
-$response_QP = $service->spreadsheets_values->get($spreadsheetId, $range_QP);
-$values_QP = $response_QP->getValues();
-
 $range_WP = 'วาดภาพ!A3:G50'; // here we use the name of the Sheet to get all the rows
 $response_WP = $service->spreadsheets_values->get($spreadsheetId, $range_WP);
 $values_WP = $response_WP->getValues();

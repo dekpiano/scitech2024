@@ -167,17 +167,21 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <?php foreach ($values_QT as $key => $v_values_QT) : 
+                                                <?php $num_QT = 0;
+                                                foreach ($values_QT as $key => $v_values_QT) : 
+                                                if($v_values_QT[1] == "ระดับชั้นมัธยมศึกษาตอนต้น"):
+                                                    $num_QT += 1;
                                                 ?>
                                                 <tr>
-                                                    <th scope="row"><?=$key+1?></th>
+                                                    <th scope="row"><?=$num_QT?></th>
                                                     <th scope="row" style="width:30%"><?=$v_values_QT[6];?></th>
                                                     <td style="width:30%">
-                                                        <?=$v_values_QT[1].$v_values_QT[2].' '.$v_values_QT[3];?></td>
+                                                        <?=$v_values_QT[2].' '.$v_values_QT[3];?></td>
                                                     <td><?=$v_values_QT[4];?></td>
-                                                    <td> <a href="page-certificate.php?name=<?=$v_values_QT[1].$v_values_QT[2].' '.$v_values_QT[3];?>&result=<?=$v_values_QT[6];?>"
+                                                    <td> <a href="page-certificate.php?Key=<?=$v_values_QT[0];?>"
                                                             target="_blank" rel="noopener noreferrer">ดาวโหลด</a> </td>
                                                 </tr>
+                                                <?php endif;?>
                                                 <?php endforeach ;?>
                                             </tbody>
                                         </table>
@@ -206,18 +210,23 @@
                                                     <th scope="col">เกียรติบัตร</th>
                                                 </tr>
                                             </thead>
-                                            <?php foreach ($values_QP as $key => $v_values_QP) : 
+                                            <?php 
+                                            $num_QT = 0;
+                                            foreach ($values_QT as $key => $v_values_QT) : 
+                                             if($v_values_QT[1] == "ระดับชั้นมัธยมศึกษาตอนปลาย"):
+                                                $num_QT += 1;
                                                 ?>
                                             <tr>
-                                                <th scope="row"><?=$key+1?></th>
-                                                <th scope="row" style="width:30%"><?=$v_values_QP[6];?></th>
-                                                <td style="width:30%"><?=$v_values_QP[1].$v_values_QP[2].' '.$v_values_QP[3];?></td>
-                                                <td><?=$v_values_QP[4];?></td>
+                                                <th scope="row"><?=$num_QT?></th>
+                                                <th scope="row" style="width:30%"><?=$v_values_QT[6];?></th>
+                                                <td style="width:30%"><?=$v_values_QT[2].' '.$v_values_QT[3];?></td>
+                                                <td><?=$v_values_QT[4];?></td>
                                                 <td>
-                                                    <a href="page-certificate.php?name=<?=$v_values_QP[1].$v_values_QP[2].' '.$v_values_QP[3];?>&result=<?=$v_values_QP[6];?>"
+                                                    <a href="page-certificate.php?Key=<?=$v_values_QT[0];?>"
                                                         target="_blank" rel="noopener noreferrer">ดาวโหลด</a>
                                                 </td>
                                             </tr>
+                                            <?php endif;?>
                                             <?php endforeach ;?>
                                             </tbody>
                                         </table>
@@ -261,7 +270,35 @@
                                 </h3>
                                 <div id="wad-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                                     <div class="accordion-body">
-                                        กำลังแข่งขัน ...
+                                        <table class="table myTable">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="row">#</th>
+                                                    <th scope="col">รางวัล</th>
+                                                    <th scope="col">ชื่อ - นาสกุล</th>
+                                                    <th scope="col">ระดับชั้น</th>
+                                                    <th scope="col">เกียรติบัตร</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <?php $num_WP = 0;
+                                                foreach ($values_WP as $key => $v_values_WP) : 
+                                                if($v_values_WP[1] == "ระดับชั้นมัธยมศึกษาตอนต้น"):
+                                                    $num_WP += 1;
+                                                ?>
+                                                <tr>
+                                                    <th scope="row"><?=$num_WP?></th>
+                                                    <th scope="row" style="width:30%"><?=$v_values_WP[6];?></th>
+                                                    <td style="width:30%">
+                                                        <?=$v_values_WP[2].' '.$v_values_WP[3];?></td>
+                                                    <td><?=$v_values_WP[4];?></td>
+                                                    <td> <a href="page-certificate.php?Key=<?=$v_values_WP[0];?>"
+                                                            target="_blank" rel="noopener noreferrer">ดาวโหลด</a> </td>
+                                                </tr>
+                                                <?php endif;?>
+                                                <?php endforeach ;?>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div><!-- # Faq item-->
@@ -275,7 +312,35 @@
                                 </h3>
                                 <div id="wad-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                                     <div class="accordion-body">
-                                        กำลังแข่งขัน ...
+                                        <table class="table myTable">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="row">#</th>
+                                                    <th scope="col">รางวัล</th>
+                                                    <th scope="col">ชื่อ - นาสกุล</th>
+                                                    <th scope="col">ระดับชั้น</th>
+                                                    <th scope="col">เกียรติบัตร</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <?php $num_WP = 0;
+                                                foreach ($values_WP as $key => $v_values_WP) : 
+                                                if($v_values_WP[1] == "ระดับชั้นมัธยมศึกษาตอนปลาย"):
+                                                    $num_WP += 1;
+                                                ?>
+                                                <tr>
+                                                    <th scope="row"><?=$num_WP?></th>
+                                                    <th scope="row" style="width:30%"><?=$v_values_WP[6];?></th>
+                                                    <td style="width:30%">
+                                                        <?=$v_values_WP[2].' '.$v_values_WP[3];?></td>
+                                                    <td><?=$v_values_WP[4];?></td>
+                                                    <td> <a href="page-certificate.php?Key=<?=$v_values_WP[0];?>"
+                                                            target="_blank" rel="noopener noreferrer">ดาวโหลด</a> </td>
+                                                </tr>
+                                                <?php endif;?>
+                                                <?php endforeach ;?>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div><!-- # Faq item-->
@@ -426,7 +491,35 @@
                                 </h3>
                                 <div id="newtun-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                                     <div class="accordion-body">
-                                        กำลังแข่งขัน ...
+                                        <table class="table myTable">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="row">#</th>
+                                                    <th scope="col">รางวัล</th>
+                                                    <th scope="col">ชื่อ - นาสกุล</th>
+                                                    <th scope="col">ระดับชั้น</th>
+                                                    <th scope="col">เกียรติบัตร</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <?php $num_EGG = 0;
+                                                foreach ($values_egg as $key => $v_values_egg) : 
+                                                if($v_values_egg[1] == "ระดับชั้นมัธยมศึกษาตอนต้น"):
+                                                    $num_EGG += 1;
+                                                ?>
+                                                <tr>
+                                                    <th scope="row"><?=$num_EGG?></th>
+                                                    <th scope="row" style="width:30%"><?=$v_values_egg[6];?></th>
+                                                    <td style="width:30%">
+                                                        <?=$v_values_egg[2].' '.$v_values_egg[3];?></td>
+                                                    <td><?=$v_values_egg[4];?></td>
+                                                    <td> <a href="page-certificate.php?Key=<?=$v_values_egg[0];?>"
+                                                            target="_blank" rel="noopener noreferrer">ดาวโหลด</a> </td>
+                                                </tr>
+                                                <?php endif;?>
+                                                <?php endforeach ;?>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div><!-- # Faq item-->
@@ -440,7 +533,35 @@
                                 </h3>
                                 <div id="newtun-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                                     <div class="accordion-body">
-                                        กำลังแข่งขัน ...
+                                        <table class="table myTable">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="row">#</th>
+                                                    <th scope="col">รางวัล</th>
+                                                    <th scope="col">ชื่อ - นาสกุล</th>
+                                                    <th scope="col">ระดับชั้น</th>
+                                                    <th scope="col">เกียรติบัตร</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <?php $num_EGG = 0;
+                                                foreach ($values_egg as $key => $v_values_egg) : 
+                                                if($v_values_egg[1] == "ระดับชั้นมัธยมศึกษาตอนปลาย"):
+                                                    $num_EGG += 1;
+                                                ?>
+                                                <tr>
+                                                    <th scope="row"><?=$num_EGG?></th>
+                                                    <th scope="row" style="width:30%"><?=$v_values_egg[6];?></th>
+                                                    <td style="width:30%">
+                                                        <?=$v_values_egg[2].' '.$v_values_egg[3];?></td>
+                                                    <td><?=$v_values_egg[4];?></td>
+                                                    <td> <a href="page-certificate.php?Key=<?=$v_values_egg[0];?>"
+                                                            target="_blank" rel="noopener noreferrer">ดาวโหลด</a> </td>
+                                                </tr>
+                                                <?php endif;?>
+                                                <?php endforeach ;?>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div><!-- # Faq item-->
@@ -481,7 +602,35 @@
                                 </h3>
                                 <div id="ROV-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                                     <div class="accordion-body">
-                                        กำลังแข่งขัน ...
+                                        <table class="table myTable">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="row">#</th>
+                                                    <th scope="col">รางวัล</th>
+                                                    <th scope="col">ชื่อ - นาสกุล</th>
+                                                    <th scope="col">ระดับชั้น</th>
+                                                    <th scope="col">เกียรติบัตร</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <?php $num_ROV = 0;
+                                                foreach ($values_ROV as $key => $v_values_ROV) : 
+                                                if($v_values_ROV[1] == "ระดับชั้นมัธยมศึกษาตอนต้น"):
+                                                    $num_ROV += 1;
+                                                ?>
+                                                <tr>
+                                                    <th scope="row"><?=$num_ROV?></th>
+                                                    <th scope="row" style="width:30%"><?=$v_values_ROV[6];?></th>
+                                                    <td style="width:30%">
+                                                        <?=$v_values_ROV[2].' '.$v_values_ROV[3];?></td>
+                                                    <td><?=$v_values_ROV[4];?></td>
+                                                    <td> <a href="page-certificate.php?Key=<?=$v_values_ROV[0];?>"
+                                                            target="_blank" rel="noopener noreferrer">ดาวโหลด</a> </td>
+                                                </tr>
+                                                <?php endif;?>
+                                                <?php endforeach ;?>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div><!-- # Faq item-->
@@ -495,7 +644,35 @@
                                 </h3>
                                 <div id="ROV-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                                     <div class="accordion-body">
-                                        กำลังแข่งขัน ...
+                                        <table class="table myTable">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="row">#</th>
+                                                    <th scope="col">รางวัล</th>
+                                                    <th scope="col">ชื่อ - นาสกุล</th>
+                                                    <th scope="col">ระดับชั้น</th>
+                                                    <th scope="col">เกียรติบัตร</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <?php $num_ROV = 0;
+                                                foreach ($values_ROV as $key => $v_values_ROV) : 
+                                                if($v_values_ROV[1] == "ระดับชั้นมัธยมศึกษาตอนปลาย"):
+                                                    $num_ROV += 1;
+                                                ?>
+                                                <tr>
+                                                    <th scope="row"><?=$num_ROV?></th>
+                                                    <th scope="row" style="width:30%"><?=$v_values_ROV[6];?></th>
+                                                    <td style="width:30%">
+                                                        <?=$v_values_ROV[2].' '.$v_values_ROV[3];?></td>
+                                                    <td><?=$v_values_ROV[4];?></td>
+                                                    <td> <a href="page-certificate.php?Key=<?=$v_values_ROV[0];?>"
+                                                            target="_blank" rel="noopener noreferrer">ดาวโหลด</a> </td>
+                                                </tr>
+                                                <?php endif;?>
+                                                <?php endforeach ;?>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div><!-- # Faq item-->
@@ -627,7 +804,9 @@
 
     <script>
     $(document).ready(function() {
-        $('.myTable').DataTable();
+        $('.myTable').DataTable({
+            lengthMenu: [5]
+        });
     });
     </script>
 </body>

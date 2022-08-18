@@ -92,10 +92,12 @@ class FontVariables
 				),
 			 */
 
-			'fontdata' => [
+			'fontdata' => [				
+				"maehongson" => [
+					'B' => "Maehongson.ttf"					
+				],
 				"sukhothai" => [
-					'R' => "Mitr-Medium.ttf",
-					'B' => "Pridi-Bold.ttf",
+					'B' => "Mitr-Medium.ttf",
 					//'I' => "THSarabun-Italic.ttf",
 					//'BI' => "THSarabun-Bold-Italic.ttf",
 					'useOTL' => 0x00,
