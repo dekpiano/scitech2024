@@ -17,6 +17,7 @@ $service = new \Google_Service_Sheets($client);
 $spreadsheetId = '1ZuRMKsmUbuDVibQzBQpMzRjWgePE9bPuMRElx2ePJL8';
 $spreadsheet = $service->spreadsheets->get($spreadsheetId);
 
+
 $range_QT = 'ตอบคำถามวิทย์!A3:G50'; // here we use the name of the Sheet to get all the rows
 $response_QT = $service->spreadsheets_values->get($spreadsheetId, $range_QT);
 $values_QT = $response_QT->getValues();
@@ -25,5 +26,18 @@ $values_QT = $response_QT->getValues();
 $range_QP = 'ตอบคำถามวิทย์!I3:O50'; // here we use the name of the Sheet to get all the rows
 $response_QP = $service->spreadsheets_values->get($spreadsheetId, $range_QP);
 $values_QP = $response_QP->getValues();
+
+$range_WP = 'วาดภาพ!A3:G50'; // here we use the name of the Sheet to get all the rows
+$response_WP = $service->spreadsheets_values->get($spreadsheetId, $range_WP);
+$values_WP = $response_WP->getValues();
+
+
+$range_egg = 'ไข่ตกตึก!A3:G50'; // here we use the name of the Sheet to get all the rows
+$response_egg = $service->spreadsheets_values->get($spreadsheetId, $range_egg);
+$values_egg = $response_egg->getValues();
+
+$range_ROV = 'ROV!A3:G50'; // here we use the name of the Sheet to get all the rows
+$response_ROV = $service->spreadsheets_values->get($spreadsheetId, $range_ROV);
+$values_ROV = $response_ROV->getValues();
 
 ?>
