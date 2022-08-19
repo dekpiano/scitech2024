@@ -18,21 +18,21 @@ $spreadsheetId = '1ZuRMKsmUbuDVibQzBQpMzRjWgePE9bPuMRElx2ePJL8';
 $spreadsheet = $service->spreadsheets->get($spreadsheetId);
 
 
-$range_QT = 'ตอบคำถามวิทย์!A3:G50'; // here we use the name of the Sheet to get all the rows
+$range_QT = 'ตอบคำถามวิทย์!A3:G150'; // here we use the name of the Sheet to get all the rows
 $response_QT = $service->spreadsheets_values->get($spreadsheetId, $range_QT);
 $values_QT = $response_QT->getValues();
 //echo '<pre>'; print_r($values);
 
-$range_WP = 'วาดภาพ!A3:G50'; // here we use the name of the Sheet to get all the rows
+$range_WP = 'วาดภาพ!A3:G150'; // here we use the name of the Sheet to get all the rows
 $response_WP = $service->spreadsheets_values->get($spreadsheetId, $range_WP);
 $values_WP = $response_WP->getValues();
 
 
-$range_egg = 'ไข่ตกตึก!A3:G50'; // here we use the name of the Sheet to get all the rows
+$range_egg = 'ไข่ตกตึก!A3:G150'; // here we use the name of the Sheet to get all the rows
 $response_egg = $service->spreadsheets_values->get($spreadsheetId, $range_egg);
 $values_egg = $response_egg->getValues();
 
-$range_ROV = 'ROV!A3:G50'; // here we use the name of the Sheet to get all the rows
+$range_ROV = 'ROV!A3:G150'; // here we use the name of the Sheet to get all the rows
 $response_ROV = $service->spreadsheets_values->get($spreadsheetId, $range_ROV);
 $values_ROV = $response_ROV->getValues();
 
