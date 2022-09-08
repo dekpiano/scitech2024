@@ -63,6 +63,31 @@ if($Key[0] == "ROV"){
     }
 }
 
+if($Key[0] == "TK"){
+    foreach ($values_Tiktok as $key => $value) {
+        if($_GET['Key'] == $value[0]){
+            $mpdf->SetDocTemplate('img/Certificate/signature/Certificate-Tiktok.pdf',true);
+            $mpdf->AddPage('L'); 
+            $text = '<div style="z-index: 99;text-align: center;padding-top: 230px;font-size: 48px;color:#000;">'.$value[2].' '.$value[3].'</div>';
+            $text .= '<div style="z-index: 99;text-align: center;padding-top: -10px;font-size: 34px;color:#000;">ได้รับรางวัล '.$value[6].' '.$value[1].'</div>';
+            $mpdf->WriteHTML($text);
+        }
+    }
+}
+
+if($Key[0] == "RE"){
+    foreach ($values_recycle as $key => $value) {
+        if($_GET['Key'] == $value[0]){
+            $mpdf->SetDocTemplate('img/Certificate/signature/Certificate-Recycle.pdf',true);
+            $mpdf->AddPage('L'); 
+            $text = '<div style="z-index: 99;text-align: center;padding-top: 230px;font-size: 48px;color:#000;">'.$value[2].' '.$value[3].'</div>';
+            $text .= '<div style="z-index: 99;text-align: center;padding-top: -10px;font-size: 34px;color:#000;">ได้รับรางวัล '.$value[6].' '.$value[1].'</div>';
+            $mpdf->WriteHTML($text);
+        }
+    }
+}
+
+
 $mpdf->Output();
 
 ?>

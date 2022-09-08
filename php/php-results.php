@@ -36,12 +36,14 @@ $range_ROV = 'ROV!A3:G150'; // here we use the name of the Sheet to get all the 
 $response_ROV = $service->spreadsheets_values->get($spreadsheetId, $range_ROV);
 $values_ROV = $response_ROV->getValues();
 
-$spreadsheetId = '1W3NB3czGyFiwfDsLl2vhwZa0SVzf0dXatYdK8QN8b2Y';
-$spreadsheet = $service->spreadsheets->get($spreadsheetId);
+$range_Tiktok = 'Tiktok!A3:G50'; // here we use the name of the Sheet to get all the rows
+$response_Tiktok = $service->spreadsheets_values->get($spreadsheetId, $range_Tiktok);
+$values_Tiktok = $response_Tiktok->getValues();
 
-$range_23 = '23 สิงหาคม 2565!A2:F5'; // here we use the name of the Sheet to get all the rows
-$response_23 = $service->spreadsheets_values->get($spreadsheetId, $range_23);
-$values_23 = $response_23->getValues();
-//echo '<pre>'; print_r($spreadsheet);
+$range_recycle = 'recycle!A3:G50'; // here we use the name of the Sheet to get all the rows
+$response_recycle = $service->spreadsheets_values->get($spreadsheetId, $range_recycle);
+$values_recycle = $response_recycle->getValues();
+
+
 
 ?>

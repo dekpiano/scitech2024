@@ -381,7 +381,35 @@
                                 </h3>
                                 <div id="TikTok-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                                     <div class="accordion-body">
-                                        กำลังแข่งขัน ...
+                                        <table class="table myTable">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="row">#</th>
+                                                    <th scope="col">รางวัล</th>
+                                                    <th scope="col">ชื่อ - นาสกุล</th>
+                                                    <th scope="col">ระดับชั้น</th>
+                                                    <th scope="col">เกียรติบัตร</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <?php $num_TK = 0;
+                                                foreach ($values_Tiktok as $key => $v_values_TK) : 
+                                                if($v_values_TK[1] == "ระดับชั้นมัธยมศึกษาตอนต้น"):
+                                                    $num_TK += 1;
+                                                ?>
+                                                <tr>
+                                                    <th scope="row"><?=$num_TK?></th>
+                                                    <th scope="row" style="width:30%"><?=$v_values_TK[6];?></th>
+                                                    <td style="width:30%">
+                                                        <?=$v_values_TK[2].' '.$v_values_TK[3];?></td>
+                                                    <td><?=$v_values_TK[4];?></td>
+                                                    <td> <a href="page-certificate.php?Key=<?=$v_values_TK[0];?>"
+                                                            target="_blank" rel="noopener noreferrer">ดาวโหลด</a> </td>
+                                                </tr>
+                                                <?php endif;?>
+                                                <?php endforeach ;?>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div><!-- # Faq item-->
@@ -435,8 +463,36 @@
                                     </button>
                                 </h3>
                                 <div id="BCG-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                                    <div class="accordion-body">
-                                        กำลังแข่งขัน ...
+                                <div class="accordion-body">
+                                        <table class="table myTable">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="row">#</th>
+                                                    <th scope="col">รางวัล</th>
+                                                    <th scope="col">ชื่อ - นาสกุล</th>
+                                                    <th scope="col">ระดับชั้น</th>
+                                                    <th scope="col">เกียรติบัตร</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <?php $num_RE = 0;
+                                                foreach ($values_recycle as $key => $v_values_RE) : 
+                                                if($v_values_RE[1] == "ระดับชั้นมัธยมศึกษาตอนต้น"):
+                                                    $num_RE += 1;
+                                                ?>
+                                                <tr>
+                                                    <th scope="row"><?=$num_RE?></th>
+                                                    <th scope="row" style="width:30%"><?=$v_values_RE[6];?></th>
+                                                    <td style="width:30%">
+                                                        <?=$v_values_RE[2].' '.$v_values_RE[3];?></td>
+                                                    <td><?=$v_values_RE[4];?></td>
+                                                    <td> <a href="page-certificate.php?Key=<?=$v_values_RE[0];?>"
+                                                            target="_blank" rel="noopener noreferrer">ดาวโหลด</a> </td>
+                                                </tr>
+                                                <?php endif;?>
+                                                <?php endforeach ;?>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div><!-- # Faq item-->
