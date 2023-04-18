@@ -1,7 +1,10 @@
 <?php include_once('php/php-results.php'); ?>
 
 <?php
-require_once __DIR__ . '/vendor/mpdf/vendor/autoload.php';
+echo $path = dirname(dirname(__FILE__));	
+// 		require_once $path.'/librarie_skj/google_sheet/vendor/autoload.php';
+
+require_once $path.'/librarie_skj/mpdf/vendor/autoload.php';
 $mpdf = new \Mpdf\Mpdf([
     'default_font' => 'maehongson'
 ]);

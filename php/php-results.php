@@ -1,6 +1,7 @@
 <?php 
+echo $path = dirname(dirname(dirname(__FILE__)));
 
-require __DIR__ . '../../vendor/autoload.php';
+require $path . '/librarie_skj/google_sheet/vendor/autoload.php';
 
 // configure the Google Client
 $client = new \Google_Client();
