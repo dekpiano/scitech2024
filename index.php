@@ -96,7 +96,8 @@
                 <!-- Uncomment the line below if you also wish to use an image logo -->
                 <img src="img/2.png" alt="" style="max-height: 65px;">
                 <h4 class="d-none d-md-block">กลุ่มสาระการเรียนรู้วิทยาศาสตร์และเทคโนโลยี <br>
-                    <small>โรงเรียนสวนกุหลาบวิทยาลัย (จิรประวัติ) นครสวรรค์</small></h4>
+                    <small>โรงเรียนสวนกุหลาบวิทยาลัย (จิรประวัติ) นครสวรรค์</small>
+                </h4>
             </a>
 
             <nav id="navbar" class="navbar">
@@ -142,7 +143,7 @@
 
                 <div class="section-header">
                     <h2>กิจกรรมภายในงาน</h2>
-                    <!-- <p>Ea vitae aspernatur deserunt voluptatem impedit deserunt magnam occaecati dssumenda quas ut ad dolores adipisci aliquam.</p> -->
+                    <h3>กลุ่มสาระการเรียนรู้วิทยาศาสตร์และเทคโนโลยี</h3>
                 </div>
 
                 <div class="row gy-5">
@@ -151,7 +152,7 @@
                     <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
                         <div class="service-item">
                             <div class="img">
-                                <img src="https://lh3.googleusercontent.com/proxy/4y4yEcbW5bjo_ugd498IMi1c1NZv51Zhi4k3fnYze60LMqA4bX3dRScUNvV9cRbD7nHg46DiNHKKYvt-SzMoDqmxmrKpxDpo9xS_g0Non-kDlDFOYGMHrpkq4QGa"
+                                <img src="https://sciplanet.org/wp-content/uploads/2022/04/water-rocket-1024x857.jpg"
                                     class="img-fluid" alt="" style="height: 300px;">
                             </div>
                             <div class="details position-relative">
@@ -163,12 +164,12 @@
                                 <!-- </a> -->
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <a class="btn-primary  btn" tabindex="-1" role="button"
-                                            aria-disabled="true" target="_blank"
-                                            href="https://forms.gle/zKt2mCpXjuf8g6oA9">สมัครแข่งขัน</a>
+                                        <a class="btn-primary  btn" tabindex="-1" role="button" aria-disabled="true"
+                                            target="_blank" href="https://forms.gle/zKt2mCpXjuf8g6oA9">สมัครแข่งขัน</a>
                                     </div>
                                     <div class="col-lg-6">
-                                    <a class="btn-secondary" target="_blank" href="#">กติกา</a>
+                                        <a class="btn-secondary" target="_blank"
+                                            href="https://docs.google.com/document/d/1-YVLxmfC_p8gL9qJ6B7Fpk3vu3K0oe6X/edit?usp=drive_link&ouid=108470401055852821871&rtpof=true&sd=true">กติกา</a>
                                     </div>
                                 </div>
                             </div>
@@ -190,12 +191,12 @@
                                 <!-- </a> -->
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <a class="btn-primary  btn" tabindex="-1" role="button"
-                                            aria-disabled="true" target="_blank"
-                                            href="https://forms.gle/j9dKNPd63g2M1ZX56">สมัครแข่งขัน</a>
+                                        <a class="btn-primary  btn" tabindex="-1" role="button" aria-disabled="true"
+                                            target="_blank" href="https://forms.gle/j9dKNPd63g2M1ZX56">สมัครแข่งขัน</a>
                                     </div>
                                     <div class="col-lg-6">
-                                    <a class="btn-secondary" target="_blank" href="#">กติกา</a>
+                                        <a class="btn-secondary" target="_blank"
+                                            href="https://docs.google.com/document/d/1-bZYjr6lwzsSTWxV5o8RrbEBdTEKVHeQ/edit?usp=drive_link&ouid=108470401055852821871&rtpof=true&sd=true">กติกา</a>
                                     </div>
                                 </div>
                             </div>
@@ -217,12 +218,12 @@
                                 <!-- </a> -->
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <a class="btn-primary  btn" tabindex="-1" role="button"
-                                            aria-disabled="true" target="_blank"
-                                            href="https://forms.gle/rDrdLujKFZBBhT8R6">สมัครแข่งขัน</a>
+                                        <a class="btn-primary  btn" tabindex="-1" role="button" aria-disabled="true"
+                                            target="_blank" href="https://forms.gle/rDrdLujKFZBBhT8R6">สมัครแข่งขัน</a>
                                     </div>
                                     <div class="col-lg-6">
-                                    <a class="btn-secondary" target="_blank" href="#">กติกา</a>
+                                        <a class="btn-secondary" target="_blank"
+                                            href="https://docs.google.com/document/d/1-iQUuKncD3hiPOzCPNh_XyXfDb1oVooN/edit?usp=drive_link&ouid=108470401055852821871&rtpof=true&sd=true">กติกา</a>
                                     </div>
                                 </div>
                             </div>
@@ -244,18 +245,18 @@
                                 <!-- </a> -->
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <a class="btn-primary  btn" tabindex="-1" role="button"
-                                            aria-disabled="true" target="_blank"
-                                            href="https://forms.gle/oSKMftq5UAVbcdCb8">สมัครแข่งขัน</a>
+                                        <a class="btn-primary  btn" tabindex="-1" role="button" aria-disabled="true"
+                                            target="_blank" href="https://forms.gle/oSKMftq5UAVbcdCb8">สมัครแข่งขัน</a>
                                     </div>
                                     <div class="col-lg-6">
-                                    <a class="btn-secondary" target="_blank" href="#">กติกา</a>
+                                        <a class="btn-secondary" target="_blank"
+                                            href="https://docs.google.com/document/d/1-nHCnb89CY6drPo43mmQa6GLVm00Qscy/edit?usp=drive_link&ouid=108470401055852821871&rtpof=true&sd=true">กติกา</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
                         <div class="service-item">
                             <div class="img">
@@ -271,23 +272,23 @@
                                 <!-- </a> -->
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <a class="btn-primary  btn" tabindex="-1" role="button"
-                                            aria-disabled="true" target="_blank"
-                                            href="https://forms.gle/NR4uq84mzLj2xKio9">สมัครแข่งขัน</a>
+                                        <a class="btn-primary  btn" tabindex="-1" role="button" aria-disabled="true"
+                                            target="_blank" href="https://forms.gle/NR4uq84mzLj2xKio9">สมัครแข่งขัน</a>
                                     </div>
                                     <div class="col-lg-6">
-                                    <a class="btn-secondary" target="_blank" href="#">กติกา</a>
+                                        <a class="btn-secondary" target="_blank"
+                                            href="https://docs.google.com/document/d/1-pPx6oIpxnXwySE7MfcdNIIMQUZPFvLK/edit?usp=drive_link&ouid=108470401055852821871&rtpof=true&sd=true">กติกา</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
                         <div class="service-item">
                             <div class="img">
-                                <img src="https://bsite.in/wp-content/uploads/2018/09/ROV5.jpg"
-                                    class="img-fluid" alt="" style="height: 300px;">
+                                <img src="https://bsite.in/wp-content/uploads/2018/09/ROV5.jpg" class="img-fluid" alt=""
+                                    style="height: 300px;">
                             </div>
                             <div class="details position-relative">
                                 <div class="icon">
@@ -298,12 +299,12 @@
                                 <!-- </a> -->
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <a class="btn-primary  btn" tabindex="-1" role="button"
-                                            aria-disabled="true" target="_blank"
-                                            href="https://forms.gle/MRCHWASqVweVzYFF9">สมัครแข่งขัน</a>
+                                        <a class="btn-primary  btn" tabindex="-1" role="button" aria-disabled="true"
+                                            target="_blank" href="https://forms.gle/MRCHWASqVweVzYFF9">สมัครแข่งขัน</a>
                                     </div>
                                     <div class="col-lg-6">
-                                    <a class="btn-secondary" target="_blank" href="#">กติกา</a>
+                                        <a class="btn-secondary" target="_blank"
+                                            href="https://docs.google.com/document/d/1-rfm1hvTQG0ALf2U5BdcFVBGEEKR-kSF/edit?usp=drive_link&ouid=108470401055852821871&rtpof=true&sd=true">กติกา</a>
                                     </div>
                                 </div>
                             </div>
@@ -325,12 +326,12 @@
                                 <!-- </a> -->
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <a class="btn-primary  btn" tabindex="-1" role="button"
-                                            aria-disabled="true" target="_blank"
-                                            href="https://forms.gle/BVodz3USBDHdEkQa6">สมัครแข่งขัน</a>
+                                        <a class="btn-primary  btn" tabindex="-1" role="button" aria-disabled="true"
+                                            target="_blank" href="https://forms.gle/BVodz3USBDHdEkQa6">สมัครแข่งขัน</a>
                                     </div>
                                     <div class="col-lg-6">
-                                    <a class="btn-secondary" target="_blank" href="#">กติกา</a>
+                                        <a class="btn-secondary" target="_blank"
+                                            href="https://docs.google.com/document/d/1-tHQCGzb3CduKc43qp2H1u_upU2_17Yn/edit?usp=drive_link&ouid=108470401055852821871&rtpof=true&sd=true">กติกา</a>
                                     </div>
                                 </div>
                             </div>
@@ -340,8 +341,8 @@
                     <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
                         <div class="service-item">
                             <div class="img">
-                                <img src="https://i.ytimg.com/vi/5qKHm1ar8gc/maxresdefault.jpg"
-                                    class="img-fluid" alt="" style="height: 300px;">
+                                <img src="https://i.ytimg.com/vi/5qKHm1ar8gc/maxresdefault.jpg" class="img-fluid" alt=""
+                                    style="height: 300px;">
                             </div>
                             <div class="details position-relative">
                                 <div class="icon">
@@ -352,19 +353,105 @@
                                 <!-- </a> -->
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <a class="btn-primary  btn" tabindex="-1" role="button"
-                                            aria-disabled="true" target="_blank"
-                                            href="https://forms.gle/LmfnemrLmGJRkkVEA">สมัครแข่งขัน</a>
+                                        <a class="btn-primary  btn" tabindex="-1" role="button" aria-disabled="true"
+                                            target="_blank" href="https://forms.gle/LmfnemrLmGJRkkVEA">สมัครแข่งขัน</a>
                                     </div>
                                     <div class="col-lg-6">
-                                    <a class="btn-secondary" target="_blank" href="#">กติกา</a>
+                                        <a class="btn-secondary" target="_blank"
+                                            href="https://docs.google.com/document/d/1-wwKgv8CXbWe1kEeRbZ7gAmsdjZ5I0Pg/edit?usp=drive_link&ouid=108470401055852821871&rtpof=true&sd=true">กติกา</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- End Service Item -->
+
+                    <div class="section-header">
+                        <h2>กิจกรรมภายในงาน</h2>
+                        <h3>กลุ่มสาระการเรียนรู้คณิตศาสตร์</h3>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="service-item">
+                            <div class="img">
+                                <img src="https://static.cdntap.com/tap-assets-prod/wp-content/uploads/sites/25/2021/12/rubik-recommend-4.jpg" class="img-fluid" alt=""
+                                    style="height: 300px;">
+                            </div>
+                            <div class="details position-relative">
+                                <div class="icon">
+                                    <i class="bi bi-activity"></i>
+                                </div>
+                                <!-- <a href="#" class="stretched-link"> -->
+                                <h3>การแข่งขันรูบิค (Rubik)</h3>
+                                <!-- </a> -->
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <a class="btn-primary  btn" tabindex="-1" role="button" aria-disabled="true"
+                                            target="_blank" href="https://docs.google.com/forms/u/0/d/11PDynNrxSWxklzr96NQhzo-5700K9M-Y6bhr6Z1Xnjs/viewform?edit_requested=true">สมัครแข่งขัน</a>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <a class="btn-secondary" target="_blank"
+                                            href="https://docs.google.com/document/d/1zXqtrpXEb1K03-3ODCeAeH4nKxqC75BK/edit?usp=sharing&ouid=108470401055852821871&rtpof=true&sd=true">กติกา</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="service-item">
+                            <div class="img">
+                                <img src="https://play-lh.googleusercontent.com/9DoqnqhQSJym3cezbgka4cklIW1ppJW1Z-XnahGLGwKMPAbskcKdxWA3qaktSVHuOw=w526-h296-rw" class="img-fluid" alt=""
+                                    style="height: 300px;">
+                            </div>
+                            <div class="details position-relative">
+                                <div class="icon">
+                                    <i class="bi bi-activity"></i>
+                                </div>
+                                <!-- <a href="#" class="stretched-link"> -->
+                                <h3>การแข่งขัน 108 IQ</h3>
+                                <!-- </a> -->
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <a class="btn-primary  btn" tabindex="-1" role="button" aria-disabled="true"
+                                            target="_blank" href="https://docs.google.com/forms/u/0/d/19JDhG0GfSE1HQfgHmuPndqfnJlAAfSRQKNZZivch2DQ/viewform?edit_requested=true">สมัครแข่งขัน</a>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <a class="btn-secondary" target="_blank"
+                                            href="https://docs.google.com/document/d/15rvvdqeKFcRwV-MqRTUY1lh4u3TXholr/edit?usp=sharing&ouid=108470401055852821871&rtpof=true&sd=true">กติกา</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="service-item">
+                            <div class="img">
+                                <img src="https://i.ytimg.com/vi/Ilg4qcBb88A/maxresdefault.jpg" class="img-fluid" alt=""
+                                    style="height: 300px;">
+                            </div>
+                            <div class="details position-relative">
+                                <div class="icon">
+                                    <i class="bi bi-activity"></i>
+                                </div>
+                                <!-- <a href="#" class="stretched-link"> -->
+                                <h3>การแข่งขัน เกม 24</h3>
+                                <!-- </a> -->
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <a class="btn-primary  btn" tabindex="-1" role="button" aria-disabled="true"
+                                            target="_blank" href="https://docs.google.com/forms/u/0/d/11PDynNrxSWxklzr96NQhzo-5700K9M-Y6bhr6Z1Xnjs/viewform?edit_requested=true">สมัครแข่งขัน</a>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <a class="btn-secondary" target="_blank"
+                                            href="https://docs.google.com/document/d/12MjHTuhl5H4MIERoB1ryBjciuc1DvuOq/edit?usp=sharing&ouid=108470401055852821871&rtpof=true&sd=true">กติกา</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
 
