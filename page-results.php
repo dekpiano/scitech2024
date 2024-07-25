@@ -132,15 +132,15 @@
             </div>
         </div><!-- End Breadcrumbs -->
 
-        <!-- ======= การแข่งขันตอบคำถาม Quizz ======= -->
+        <!-- ======= การแข่งขันจรวดขวดน้ำ Water Bottle Rocket ======= -->
         <section id="faq" class="faq">
             <div class="container-fluid" data-aos="fade-up">
-                <div class="row gy-4">
+                <div class="row gy-4 justify-content-center">
                     <div
                         class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
 
                         <div class="content px-xl-5">
-                            <h3>ผลการแข่งขัน <strong>การแข่งขันตอบคำถาม Quizz</strong></h3>
+                            <h3>ผลการแข่งขัน <strong>จรวดขวดน้ำ Water Bottle Rocket</strong></h3>
 
                         </div>
 
@@ -148,12 +148,12 @@
                             <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
                                 <h3 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#Quizz-1">
+                                        data-bs-target="#Rocket-1">
                                         <i class="bi bi-question-circle question-icon"></i>
-                                        ระดับมัธยมศึกษาตอนต้น
+                                        ระดับประถมศึกษาตอนปลาย (ป.4 - ป.6)
                                     </button>
                                 </h3>
-                                <div id="Quizz-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div id="Rocket-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                                     <div class="accordion-body">
 
                                         <table class="table myTable">
@@ -168,17 +168,61 @@
                                             </thead>
                                             <tbody>
                                                 <?php $num_QT = 0;
-                                                foreach ($values_QT as $key => $v_values_QT) : 
-                                                if($v_values_QT[1] == "ระดับชั้นมัธยมศึกษาตอนต้น"):
+                                                foreach ($values_Rocket as $key => $v_values_Rocket) : 
+                                                if(@$v_values_Rocket[1] == "ระดับประถมศึกษาตอนปลาย"):
                                                     $num_QT += 1;
                                                 ?>
                                                 <tr>
                                                     <th scope="row"><?=$num_QT?></th>
-                                                    <th scope="row" style="width:30%"><?=$v_values_QT[6];?></th>
+                                                    <th scope="row" style="width:30%"><?=@$v_values_Rocket[6];?></th>
                                                     <td style="width:30%">
-                                                        <?=$v_values_QT[2].' '.$v_values_QT[3];?></td>
-                                                    <td><?=$v_values_QT[4];?></td>
-                                                    <td> <a href="page-certificate.php?Key=<?=$v_values_QT[0];?>"
+                                                        <?=@$v_values_Rocket[2].' '.@$v_values_Rocket[3];?></td>
+                                                    <td><?=@$v_values_Rocket[4];?></td>
+                                                    <td> <a href="page-certificate.php?Key=<?=@$v_values_Rocket[0];?>"
+                                                            target="_blank" rel="noopener noreferrer">ดาวโหลด</a> </td>
+                                                </tr>
+                                                <?php endif;?>
+                                                <?php endforeach ;?>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div><!-- # Faq item-->
+                            <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#Rocket-2">
+                                        <i class="bi bi-question-circle question-icon"></i>
+                                        ระดับมัธยมศึกษาตอนต้น (ม.1 - ม.3)
+                                    </button>
+                                </h3>
+                                <div id="Rocket-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                    <div class="accordion-body">
+
+                                        <table class="table myTable">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="row">#</th>
+                                                    <th scope="col">รางวัล</th>
+                                                    <th scope="col">ชื่อ - นาสกุล</th>
+                                                    <th scope="col">ระดับชั้น</th>
+                                                    <th scope="col">เกียรติบัตร</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <?php $num_QT = 0;
+                                                foreach ($values_Rocket as $key => $v_values_Rocket) : 
+                                                if(@$v_values_Rocket[1] == "ระดับชั้นมัธยมศึกษาตอนต้น"):
+                                                    $num_QT += 1;
+                                                ?>
+                                                <tr>
+                                                    <th scope="row"><?=$num_QT?></th>
+                                                    <th scope="row" style="width:30%"><?=@$v_values_Rocket[6];?></th>
+                                                    <td style="width:30%">
+                                                        <?=@$v_values_Rocket[2].' '.@$v_values_Rocket[3];?></td>
+                                                    <td><?=@$v_values_Rocket[4];?></td>
+                                                    <td> <a href="page-certificate.php?Key=<?=@$v_values_Rocket[0];?>"
                                                             target="_blank" rel="noopener noreferrer">ดาวโหลด</a> </td>
                                                 </tr>
                                                 <?php endif;?>
@@ -192,12 +236,12 @@
                             <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
                                 <h3 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#Quizz-2">
+                                        data-bs-target="#Rocket-3">
                                         <i class="bi bi-question-circle question-icon"></i>
-                                        ระดับมัธยมศึกษาตอนปลาย
+                                        ระดับมัธยมศึกษาตอนปลาย (ม.4 - ม.6)
                                     </button>
                                 </h3>
-                                <div id="Quizz-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div id="Rocket-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                                     <div class="accordion-body">
 
                                         <table class="table myTable">
@@ -212,17 +256,18 @@
                                             </thead>
                                             <?php 
                                             $num_QT = 0;
-                                            foreach ($values_QT as $key => $v_values_QT) : 
-                                             if($v_values_QT[1] == "ระดับชั้นมัธยมศึกษาตอนปลาย"):
+                                            foreach ($values_Rocket as $key => $v_values_Rocket) : 
+                                             if(@$v_values_Rocket[1] == "ระดับชั้นมัธยมศึกษาตอนปลาย"):
                                                 $num_QT += 1;
                                                 ?>
                                             <tr>
                                                 <th scope="row"><?=$num_QT?></th>
-                                                <th scope="row" style="width:30%"><?=$v_values_QT[6];?></th>
-                                                <td style="width:30%"><?=$v_values_QT[2].' '.$v_values_QT[3];?></td>
-                                                <td><?=$v_values_QT[4];?></td>
+                                                <th scope="row" style="width:30%"><?=@$v_values_Rocket[6];?></th>
+                                                <td style="width:30%">
+                                                    <?=@$v_values_Rocket[2].' '.@$v_values_Rocket[3];?></td>
+                                                <td><?=@$v_values_Rocket[4];?></td>
                                                 <td>
-                                                    <a href="page-certificate.php?Key=<?=$v_values_QT[0];?>"
+                                                    <a href="page-certificate.php?Key=<?=@$v_values_Rocket[0];?>"
                                                         target="_blank" rel="noopener noreferrer">ดาวโหลด</a>
                                                 </td>
                                             </tr>
@@ -238,9 +283,6 @@
 
                     </div>
 
-                    <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img"
-                        style='background-image: url(https://d2908q01vomqb2.cloudfront.net/9e6a55b6b4563e652a23be9d623ca5055c356940/2018/06/19/Quizziz2.png);'>
-                        &nbsp;</div>
                 </div>
 
             </div>
@@ -250,7 +292,7 @@
         <!-- ======= การแข่งขันวาดภาพทางวิทยาศาสตร์ ======= -->
         <section id="faq" class="faq">
             <div class="container-fluid" data-aos="fade-up">
-                <div class="row gy-4">
+                <div class="row gy-4 justify-content-center">
                     <div
                         class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
 
@@ -265,7 +307,7 @@
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#wad-1">
                                         <i class="bi bi-question-circle question-icon"></i>
-                                        ระดับมัธยมศึกษาตอนต้น
+                                        ระดับประถมศึกษาตอนปลาย (ป.4 - ป.6)
                                     </button>
                                 </h3>
                                 <div id="wad-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
@@ -282,17 +324,17 @@
                                             </thead>
                                             <tbody>
                                                 <?php $num_WP = 0;
-                                                foreach ($values_WP as $key => $v_values_WP) : 
-                                                if($v_values_WP[1] == "ระดับชั้นมัธยมศึกษาตอนต้น"):
+                                                foreach ($values_Draw as $key => $v_values_Draw) : 
+                                                if(@$v_values_Draw[1] == "ระดับประถมศึกษาตอนปลาย"):
                                                     $num_WP += 1;
                                                 ?>
                                                 <tr>
                                                     <th scope="row"><?=$num_WP?></th>
-                                                    <th scope="row" style="width:30%"><?=$v_values_WP[6];?></th>
+                                                    <th scope="row" style="width:30%"><?=@$v_values_Draw[6];?></th>
                                                     <td style="width:30%">
-                                                        <?=$v_values_WP[2].' '.$v_values_WP[3];?></td>
-                                                    <td><?=$v_values_WP[4];?></td>
-                                                    <td> <a href="page-certificate.php?Key=<?=$v_values_WP[0];?>"
+                                                        <?=@$v_values_Draw[2].' '.@$v_values_Draw[3];?></td>
+                                                    <td><?=@$v_values_Draw[4];?></td>
+                                                    <td> <a href="page-certificate.php?Key=<?=@$v_values_Draw[0];?>"
                                                             target="_blank" rel="noopener noreferrer">ดาวโหลด</a> </td>
                                                 </tr>
                                                 <?php endif;?>
@@ -302,12 +344,12 @@
                                     </div>
                                 </div>
                             </div><!-- # Faq item-->
-                            <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
+                            <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
                                 <h3 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#wad-2">
                                         <i class="bi bi-question-circle question-icon"></i>
-                                        ระดับมัธยมศึกษาตอนปลาย
+                                        ระดับมัธยมศึกษาตอนต้น (ม.1 - ม.3)
                                     </button>
                                 </h3>
                                 <div id="wad-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
@@ -324,86 +366,17 @@
                                             </thead>
                                             <tbody>
                                                 <?php $num_WP = 0;
-                                                foreach ($values_WP as $key => $v_values_WP) : 
-                                                if($v_values_WP[1] == "ระดับชั้นมัธยมศึกษาตอนปลาย"):
+                                                foreach ($values_Draw as $key => $v_values_Draw) : 
+                                                if(@$v_values_Draw[1] == "ระดับชั้นมัธยมศึกษาตอนต้น"):
                                                     $num_WP += 1;
                                                 ?>
                                                 <tr>
                                                     <th scope="row"><?=$num_WP?></th>
-                                                    <th scope="row" style="width:30%"><?=$v_values_WP[6];?></th>
+                                                    <th scope="row" style="width:30%"><?=@$v_values_Draw[6];?></th>
                                                     <td style="width:30%">
-                                                        <?=$v_values_WP[2].' '.$v_values_WP[3];?></td>
-                                                    <td><?=$v_values_WP[4];?></td>
-                                                    <td> <a href="page-certificate.php?Key=<?=$v_values_WP[0];?>"
-                                                            target="_blank" rel="noopener noreferrer">ดาวโหลด</a> </td>
-                                                </tr>
-                                                <?php endif;?>
-                                                <?php endforeach ;?>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div><!-- # Faq item-->
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img"
-                        style='background-image: url(https://i0.wp.com/www.creativespotlite.com/wp-content/uploads/2020/01/Cara-Membuat-Doodle-Art-yang-Mudah-dan-Simple.jpg?resize=840%2C525&ssl=1);'>
-                        &nbsp;</div>
-                </div>
-
-            </div>
-        </section>
-        <!-- End การแข่งขันวาดภาพทางวิทยาศาสตร์ -->
-
-        <!-- ======= การแข่งขันวาดภาพทางวิทยาศาสตร์ ======= -->
-        <section id="faq" class="faq">
-            <div class="container-fluid" data-aos="fade-up">
-                <div class="row gy-4">
-                    <div
-                        class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
-
-                        <div class="content px-xl-5">
-                            <h3>ผลการแข่งขัน <strong>การแข่งขันเต้น Cover TikTok</strong></h3>
-
-                        </div>
-
-                        <div class="accordion accordion-flush px-xl-5" id="faqlist">
-                            <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
-                                <h3 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#TikTok-1">
-                                        <i class="bi bi-question-circle question-icon"></i>
-                                        ระดับมัธยมศึกษาตอนต้น
-                                    </button>
-                                </h3>
-                                <div id="TikTok-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                                    <div class="accordion-body">
-                                        <table class="table myTable">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="row">#</th>
-                                                    <th scope="col">รางวัล</th>
-                                                    <th scope="col">ชื่อ - นาสกุล</th>
-                                                    <th scope="col">ระดับชั้น</th>
-                                                    <th scope="col">เกียรติบัตร</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <?php $num_TK = 0;
-                                                foreach ($values_Tiktok as $key => $v_values_TK) : 
-                                                if($v_values_TK[1] == "ระดับชั้นมัธยมศึกษาตอนต้น"):
-                                                    $num_TK += 1;
-                                                ?>
-                                                <tr>
-                                                    <th scope="row"><?=$num_TK?></th>
-                                                    <th scope="row" style="width:30%"><?=$v_values_TK[6];?></th>
-                                                    <td style="width:30%">
-                                                        <?=$v_values_TK[2].' '.$v_values_TK[3];?></td>
-                                                    <td><?=$v_values_TK[4];?></td>
-                                                    <td> <a href="page-certificate.php?Key=<?=$v_values_TK[0];?>"
+                                                        <?=@$v_values_Draw[2].' '.@$v_values_Draw[3];?></td>
+                                                    <td><?=@$v_values_Draw[4];?></td>
+                                                    <td> <a href="page-certificate.php?Key=<?=@$v_values_Draw[0];?>"
                                                             target="_blank" rel="noopener noreferrer">ดาวโหลด</a> </td>
                                                 </tr>
                                                 <?php endif;?>
@@ -416,40 +389,107 @@
                             <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
                                 <h3 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#TikTok-2">
+                                        data-bs-target="#wad-3">
                                         <i class="bi bi-question-circle question-icon"></i>
-                                        ระดับมัธยมศึกษาตอนปลาย
+                                        ระดับมัธยมศึกษาตอนปลาย (ม.4 - ม.6)
                                     </button>
                                 </h3>
-                                <div id="TikTok-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div id="wad-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                                     <div class="accordion-body">
-                                        กำลังแข่งขัน ...
+                                        <table class="table myTable">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="row">#</th>
+                                                    <th scope="col">รางวัล</th>
+                                                    <th scope="col">ชื่อ - นาสกุล</th>
+                                                    <th scope="col">ระดับชั้น</th>
+                                                    <th scope="col">เกียรติบัตร</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <?php $num_WP = 0;
+                                                foreach ($values_Draw as $key => $v_values_Draw) : 
+                                                if(@$v_values_Draw[1] == "ระดับชั้นมัธยมศึกษาตอนปลาย"):
+                                                    $num_WP += 1;
+                                                ?>
+                                                <tr>
+                                                    <th scope="row"><?=$num_WP?></th>
+                                                    <th scope="row" style="width:30%"><?=@$v_values_Draw[6];?></th>
+                                                    <td style="width:30%">
+                                                        <?=@$v_values_Draw[2].' '.@$v_values_Draw[3];?></td>
+                                                    <td><?=@$v_values_Draw[4];?></td>
+                                                    <td> <a href="page-certificate.php?Key=<?=@$v_values_Draw[0];?>"
+                                                            target="_blank" rel="noopener noreferrer">ดาวโหลด</a> </td>
+                                                </tr>
+                                                <?php endif;?>
+                                                <?php endforeach ;?>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div><!-- # Faq item-->
-
+                            <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#wad-4">
+                                        <i class="bi bi-question-circle question-icon"></i>
+                                        ระดับประชาชนทั่วไป
+                                    </button>
+                                </h3>
+                                <div id="wad-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                    <div class="accordion-body">
+                                        <table class="table myTable">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="row">#</th>
+                                                    <th scope="col">รางวัล</th>
+                                                    <th scope="col">ชื่อ - นาสกุล</th>
+                                                    <th scope="col">ระดับชั้น</th>
+                                                    <th scope="col">เกียรติบัตร</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <?php $num_WP = 0;
+                                                foreach ($values_Draw as $key => $v_values_Draw) : 
+                                                if(@$v_values_Draw[1] == "ระดับประชาชนทั่วไป"):
+                                                    $num_WP += 1;
+                                                ?>
+                                                <tr>
+                                                    <th scope="row"><?=$num_WP?></th>
+                                                    <th scope="row" style="width:30%"><?=@$v_values_Draw[6];?></th>
+                                                    <td style="width:30%">
+                                                        <?=@$v_values_Draw[2].' '.@$v_values_Draw[3];?></td>
+                                                    <td><?=@$v_values_Draw[4];?></td>
+                                                    <td> <a href="page-certificate.php?Key=<?=@$v_values_Draw[0];?>"
+                                                            target="_blank" rel="noopener noreferrer">ดาวโหลด</a> </td>
+                                                </tr>
+                                                <?php endif;?>
+                                                <?php endforeach ;?>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div><!-- # Faq item-->
                         </div>
 
                     </div>
 
-                    <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img"
-                        style='background-image: url(img/tiktok.jpg);'>
-                        &nbsp;</div>
                 </div>
 
             </div>
         </section>
         <!-- End การแข่งขันวาดภาพทางวิทยาศาสตร์ -->
 
-        <!-- ======= การแข่งขันประกวดชุดรีไซเคิล BCG ======= -->
+
+        <!-- ======= การแข่งขันประกวดชุดรีไซเคิล ======= -->
         <section id="faq" class="faq">
             <div class="container-fluid" data-aos="fade-up">
-                <div class="row gy-4">
+                <div class="row gy-4 justify-content-center">
                     <div
                         class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
 
                         <div class="content px-xl-5">
-                            <h3>ผลการแข่งขัน <strong>การแข่งขันประกวดชุดรีไซเคิล BCG</strong></h3>
+                            <h3>ผลการแข่งขัน <strong>การแข่งขันประกวดชุดรีไซเคิล</strong></h3>
 
                         </div>
 
@@ -459,11 +499,11 @@
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#BCG-1">
                                         <i class="bi bi-question-circle question-icon"></i>
-                                        ระดับมัธยมศึกษาตอนต้น
+                                        ระดับประถมศึกษาตอนปลาย (ป.4 - ป.6)
                                     </button>
                                 </h3>
                                 <div id="BCG-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                                <div class="accordion-body">
+                                    <div class="accordion-body">
                                         <table class="table myTable">
                                             <thead>
                                                 <tr>
@@ -477,16 +517,16 @@
                                             <tbody>
                                                 <?php $num_RE = 0;
                                                 foreach ($values_recycle as $key => $v_values_RE) : 
-                                                if($v_values_RE[1] == "ระดับชั้นมัธยมศึกษาตอนต้น"):
+                                                if(@$v_values_RE[1] == "ระดับประถมศึกษาตอนปลาย"):
                                                     $num_RE += 1;
                                                 ?>
                                                 <tr>
                                                     <th scope="row"><?=$num_RE?></th>
-                                                    <th scope="row" style="width:30%"><?=$v_values_RE[6];?></th>
+                                                    <th scope="row" style="width:30%"><?=@$v_values_RE[6];?></th>
                                                     <td style="width:30%">
-                                                        <?=$v_values_RE[2].' '.$v_values_RE[3];?></td>
-                                                    <td><?=$v_values_RE[4];?></td>
-                                                    <td> <a href="page-certificate.php?Key=<?=$v_values_RE[0];?>"
+                                                        <?=@$v_values_RE[2].' '.@$v_values_RE[3];?></td>
+                                                    <td><?=@$v_values_RE[4];?></td>
+                                                    <td> <a href="page-certificate.php?Key=<?=@$v_values_RE[0];?>"
                                                             target="_blank" rel="noopener noreferrer">ดาวโหลด</a> </td>
                                                 </tr>
                                                 <?php endif;?>
@@ -496,43 +536,153 @@
                                     </div>
                                 </div>
                             </div><!-- # Faq item-->
-                            <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
+                            <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
                                 <h3 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#BCG-2">
                                         <i class="bi bi-question-circle question-icon"></i>
-                                        ระดับมัธยมศึกษาตอนปลาย
+                                        ระดับมัธยมศึกษาตอนต้น (ม.1 - ม.3)
                                     </button>
                                 </h3>
                                 <div id="BCG-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                                     <div class="accordion-body">
-                                        กำลังแข่งขัน ...
+                                        <table class="table myTable">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="row">#</th>
+                                                    <th scope="col">รางวัล</th>
+                                                    <th scope="col">ชื่อ - นาสกุล</th>
+                                                    <th scope="col">ระดับชั้น</th>
+                                                    <th scope="col">เกียรติบัตร</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <?php $num_RE = 0;
+                                                foreach ($values_recycle as $key => $v_values_RE) : 
+                                                if(@$v_values_RE[1] == "ระดับชั้นมัธยมศึกษาตอนต้น"):
+                                                    $num_RE += 1;
+                                                ?>
+                                                <tr>
+                                                    <th scope="row"><?=$num_RE?></th>
+                                                    <th scope="row" style="width:30%"><?=@$v_values_RE[6];?></th>
+                                                    <td style="width:30%">
+                                                        <?=@$v_values_RE[2].' '.@$v_values_RE[3];?></td>
+                                                    <td><?=@$v_values_RE[4];?></td>
+                                                    <td> <a href="page-certificate.php?Key=<?=@$v_values_RE[0];?>"
+                                                            target="_blank" rel="noopener noreferrer">ดาวโหลด</a> </td>
+                                                </tr>
+                                                <?php endif;?>
+                                                <?php endforeach ;?>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div><!-- # Faq item-->
+                            <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#BCG-3">
+                                        <i class="bi bi-question-circle question-icon"></i>
+                                        ระดับมัธยมศึกษาตอนปลาย (ม.4 - ม.6)
+                                    </button>
+                                </h3>
+                                <div id="BCG-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                    <div class="accordion-body">
+                                        <table class="table myTable">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="row">#</th>
+                                                    <th scope="col">รางวัล</th>
+                                                    <th scope="col">ชื่อ - นาสกุล</th>
+                                                    <th scope="col">ระดับชั้น</th>
+                                                    <th scope="col">เกียรติบัตร</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <?php $num_RE = 0;
+                                                foreach ($values_recycle as $key => $v_values_RE) : 
+                                                if(@$v_values_RE[1] == "ระดับมัธยมศึกษาตอนปลาย"):
+                                                    $num_RE += 1;
+                                                ?>
+                                                <tr>
+                                                    <th scope="row"><?=$num_RE?></th>
+                                                    <th scope="row" style="width:30%"><?=@$v_values_RE[6];?></th>
+                                                    <td style="width:30%">
+                                                        <?=@$v_values_RE[2].' '.@$v_values_RE[3];?></td>
+                                                    <td><?=@$v_values_RE[4];?></td>
+                                                    <td> <a href="page-certificate.php?Key=<?=@$v_values_RE[0];?>"
+                                                            target="_blank" rel="noopener noreferrer">ดาวโหลด</a> </td>
+                                                </tr>
+                                                <?php endif;?>
+                                                <?php endforeach ;?>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div><!-- # Faq item-->
+                            <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#BCG-4">
+                                        <i class="bi bi-question-circle question-icon"></i>
+                                        ระดับประชาชนทั่วไป
+                                    </button>
+                                </h3>
+                                <div id="BCG-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                    <div class="accordion-body">
+                                        <table class="table myTable">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="row">#</th>
+                                                    <th scope="col">รางวัล</th>
+                                                    <th scope="col">ชื่อ - นาสกุล</th>
+                                                    <th scope="col">ระดับชั้น</th>
+                                                    <th scope="col">เกียรติบัตร</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <?php $num_RE = 0;
+                                                foreach ($values_recycle as $key => $v_values_RE) : 
+                                                if(@$v_values_RE[1] == "ระดับประชาชนทั่วไป"):
+                                                    $num_RE += 1;
+                                                ?>
+                                                <tr>
+                                                    <th scope="row"><?=$num_RE?></th>
+                                                    <th scope="row" style="width:30%"><?=@$v_values_RE[6];?></th>
+                                                    <td style="width:30%">
+                                                        <?=@$v_values_RE[2].' '.@$v_values_RE[3];?></td>
+                                                    <td><?=@$v_values_RE[4];?></td>
+                                                    <td> <a href="page-certificate.php?Key=<?=@$v_values_RE[0];?>"
+                                                            target="_blank" rel="noopener noreferrer">ดาวโหลด</a> </td>
+                                                </tr>
+                                                <?php endif;?>
+                                                <?php endforeach ;?>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div><!-- # Faq item-->
+
 
                         </div>
 
                     </div>
 
-                    <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img"
-                        style='background-image: url(https://f.ptcdn.info/492/037/000/nxyrte10x9uZmh01O3iC-o.jpg);'>
-                        &nbsp;</div>
                 </div>
 
             </div>
         </section>
         <!-- End การแข่งขันประกวดชุดรีไซเคิล BCG -->
 
-        <!-- ======= การแข่งขันไข่นิวตัน ======= -->
+        <!-- ======= Cover Dance ======= -->
         <section id="faq" class="faq">
             <div class="container-fluid" data-aos="fade-up">
-                <div class="row gy-4">
+                <div class="row gy-4 justify-content-center">
                     <div
                         class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
 
                         <div class="content px-xl-5">
-                            <h3>ผลการแข่งขัน <strong>การแข่งขันไข่นิวตัน</strong></h3>
+                            <h3>ผลการแข่งขัน <strong>Cover Dance</strong></h3>
 
                         </div>
 
@@ -540,12 +690,12 @@
                             <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
                                 <h3 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#newtun-1">
+                                        data-bs-target="#Dance-1">
                                         <i class="bi bi-question-circle question-icon"></i>
-                                        ระดับมัธยมศึกษาตอนต้น
+                                        ระดับมัธยมศึกษาตอนต้น (ม.1 - ม.3)
                                     </button>
                                 </h3>
-                                <div id="newtun-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div id="Dance-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                                     <div class="accordion-body">
                                         <table class="table myTable">
                                             <thead>
@@ -559,17 +709,18 @@
                                             </thead>
                                             <tbody>
                                                 <?php $num_EGG = 0;
-                                                foreach ($values_egg as $key => $v_values_egg) : 
-                                                if($v_values_egg[1] == "ระดับชั้นมัธยมศึกษาตอนต้น"):
+                                                foreach ($values_CoverDance as $key => $v_values_CoverDance) : 
+                                                if(@$v_values_CoverDance[1] == "ระดับชั้นมัธยมศึกษาตอนต้น"):
                                                     $num_EGG += 1;
                                                 ?>
                                                 <tr>
                                                     <th scope="row"><?=$num_EGG?></th>
-                                                    <th scope="row" style="width:30%"><?=$v_values_egg[6];?></th>
+                                                    <th scope="row" style="width:30%"><?=@$v_values_CoverDance[6];?>
+                                                    </th>
                                                     <td style="width:30%">
-                                                        <?=$v_values_egg[2].' '.$v_values_egg[3];?></td>
-                                                    <td><?=$v_values_egg[4];?></td>
-                                                    <td> <a href="page-certificate.php?Key=<?=$v_values_egg[0];?>"
+                                                        <?=@$v_values_CoverDance[2].' '.@$v_values_CoverDance[3];?></td>
+                                                    <td><?=@$v_values_CoverDance[4];?></td>
+                                                    <td> <a href="page-certificate.php?Key=<?=@$v_values_CoverDance[0];?>"
                                                             target="_blank" rel="noopener noreferrer">ดาวโหลด</a> </td>
                                                 </tr>
                                                 <?php endif;?>
@@ -582,12 +733,12 @@
                             <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
                                 <h3 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#newtun-2">
+                                        data-bs-target="#Dance-2">
                                         <i class="bi bi-question-circle question-icon"></i>
-                                        ระดับมัธยมศึกษาตอนปลาย
+                                        ระดับมัธยมศึกษาตอนปลาย (ม.4 - ม.6)
                                     </button>
                                 </h3>
-                                <div id="newtun-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                <div id="Dance-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                                     <div class="accordion-body">
                                         <table class="table myTable">
                                             <thead>
@@ -601,17 +752,18 @@
                                             </thead>
                                             <tbody>
                                                 <?php $num_EGG = 0;
-                                                foreach ($values_egg as $key => $v_values_egg) : 
-                                                if($v_values_egg[1] == "ระดับชั้นมัธยมศึกษาตอนปลาย"):
+                                                foreach ($values_CoverDance as $key => $v_values_CoverDance) : 
+                                                if(@$v_values_CoverDance[1] == "ระดับชั้นมัธยมศึกษาตอนปลาย"):
                                                     $num_EGG += 1;
                                                 ?>
                                                 <tr>
                                                     <th scope="row"><?=$num_EGG?></th>
-                                                    <th scope="row" style="width:30%"><?=$v_values_egg[6];?></th>
+                                                    <th scope="row" style="width:30%"><?=@$v_values_CoverDance[6];?>
+                                                    </th>
                                                     <td style="width:30%">
-                                                        <?=$v_values_egg[2].' '.$v_values_egg[3];?></td>
-                                                    <td><?=$v_values_egg[4];?></td>
-                                                    <td> <a href="page-certificate.php?Key=<?=$v_values_egg[0];?>"
+                                                        <?=@$v_values_CoverDance[2].' '.@$v_values_CoverDance[3];?></td>
+                                                    <td><?=@$v_values_CoverDance[4];?></td>
+                                                    <td> <a href="page-certificate.php?Key=<?=@$v_values_CoverDance[0];?>"
                                                             target="_blank" rel="noopener noreferrer">ดาวโหลด</a> </td>
                                                 </tr>
                                                 <?php endif;?>
@@ -626,19 +778,126 @@
 
                     </div>
 
-                    <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img"
-                        style='background-image: url(https://i.ytimg.com/vi/H9b72e89_18/maxresdefault.jpg);'>
-                        &nbsp;</div>
                 </div>
 
             </div>
         </section>
-        <!-- End การแข่งขันไข่นิวตัน -->
+        <!-- End Cover Dance -->
+
+        <!-- ======= SpeedyQuiz ======= -->
+        <section id="faq" class="faq">
+            <div class="container-fluid" data-aos="fade-up">
+                <div class="row gy-4 justify-content-center">
+                    <div
+                        class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+                        <div class="content px-xl-5">
+                            <h3>ผลการแข่งขัน <strong>ถามไว ตอบไว SpeedyQuiz</strong></h3>
+
+                        </div>
+
+                        <div class="accordion accordion-flush px-xl-5" id="faqlist">
+                            <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#SpeedyQuiz-1">
+                                        <i class="bi bi-question-circle question-icon"></i>
+                                        ระดับมัธยมศึกษาตอนต้น (ม.1 - ม.3)
+                                    </button>
+                                </h3>
+                                <div id="SpeedyQuiz-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                    <div class="accordion-body">
+                                        <table class="table myTable">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="row">#</th>
+                                                    <th scope="col">รางวัล</th>
+                                                    <th scope="col">ชื่อ - นาสกุล</th>
+                                                    <th scope="col">ระดับชั้น</th>
+                                                    <th scope="col">เกียรติบัตร</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <?php $num_EGG = 0;
+                                                foreach ($values_SpeedyQuiz as $key => $v_values_SpeedyQuiz) : 
+                                                if(@$v_values_SpeedyQuiz[1] == "ระดับชั้นมัธยมศึกษาตอนต้น"):
+                                                    $num_EGG += 1;
+                                                ?>
+                                                <tr>
+                                                    <th scope="row"><?=$num_EGG?></th>
+                                                    <th scope="row" style="width:30%"><?=@$v_values_SpeedyQuiz[6];?>
+                                                    </th>
+                                                    <td style="width:30%">
+                                                        <?=@$v_values_SpeedyQuiz[2].' '.@$v_values_SpeedyQuiz[3];?></td>
+                                                    <td><?=@$v_values_SpeedyQuiz[4];?></td>
+                                                    <td> <a href="page-certificate.php?Key=<?=@$v_values_SpeedyQuiz[0];?>"
+                                                            target="_blank" rel="noopener noreferrer">ดาวโหลด</a> </td>
+                                                </tr>
+                                                <?php endif;?>
+                                                <?php endforeach ;?>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div><!-- # Faq item-->
+                            <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#SpeedyQuiz-2">
+                                        <i class="bi bi-question-circle question-icon"></i>
+                                        ระดับมัธยมศึกษาตอนปลาย (ม.4 - ม.6)
+                                    </button>
+                                </h3>
+                                <div id="SpeedyQuiz-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                    <div class="accordion-body">
+                                        <table class="table myTable">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="row">#</th>
+                                                    <th scope="col">รางวัล</th>
+                                                    <th scope="col">ชื่อ - นาสกุล</th>
+                                                    <th scope="col">ระดับชั้น</th>
+                                                    <th scope="col">เกียรติบัตร</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <?php $num_EGG = 0;
+                                                foreach ($values_SpeedyQuiz as $key => $v_values_SpeedyQuiz) : 
+                                                if(@$v_values_SpeedyQuiz[1] == "ระดับชั้นมัธยมศึกษาตอนปลาย"):
+                                                    $num_EGG += 1;
+                                                ?>
+                                                <tr>
+                                                    <th scope="row"><?=$num_EGG?></th>
+                                                    <th scope="row" style="width:30%"><?=@$v_values_SpeedyQuiz[6];?>
+                                                    </th>
+                                                    <td style="width:30%">
+                                                        <?=@$v_values_SpeedyQuiz[2].' '.@$v_values_SpeedyQuiz[3];?></td>
+                                                    <td><?=@$v_values_SpeedyQuiz[4];?></td>
+                                                    <td> <a href="page-certificate.php?Key=<?=@$v_values_SpeedyQuiz[0];?>"
+                                                            target="_blank" rel="noopener noreferrer">ดาวโหลด</a> </td>
+                                                </tr>
+                                                <?php endif;?>
+                                                <?php endforeach ;?>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div><!-- # Faq item-->
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- End SpeedyQuiz -->
 
         <!-- ======= การแข่งขัน SKJ ROV ======= -->
         <section id="faq" class="faq">
             <div class="container-fluid" data-aos="fade-up">
-                <div class="row gy-4">
+                <div class="row gy-4 justify-content-center">
                     <div
                         class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
 
@@ -653,7 +912,7 @@
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#ROV-1">
                                         <i class="bi bi-question-circle question-icon"></i>
-                                        ระดับมัธยมศึกษาตอนต้น
+                                        ระดับมัธยมศึกษา
                                     </button>
                                 </h3>
                                 <div id="ROV-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
@@ -671,58 +930,16 @@
                                             <tbody>
                                                 <?php $num_ROV = 0;
                                                 foreach ($values_ROV as $key => $v_values_ROV) : 
-                                                if($v_values_ROV[1] == "ระดับชั้นมัธยมศึกษาตอนต้น"):
+                                                if(@$v_values_ROV[1] == "ระดับมัธยมศึกษา"):
                                                     $num_ROV += 1;
                                                 ?>
                                                 <tr>
                                                     <th scope="row"><?=$num_ROV?></th>
-                                                    <th scope="row" style="width:30%"><?=$v_values_ROV[6];?></th>
+                                                    <th scope="row" style="width:30%"><?=@$v_values_ROV[6];?></th>
                                                     <td style="width:30%">
-                                                        <?=$v_values_ROV[2].' '.$v_values_ROV[3];?></td>
-                                                    <td><?=$v_values_ROV[4];?></td>
-                                                    <td> <a href="page-certificate.php?Key=<?=$v_values_ROV[0];?>"
-                                                            target="_blank" rel="noopener noreferrer">ดาวโหลด</a> </td>
-                                                </tr>
-                                                <?php endif;?>
-                                                <?php endforeach ;?>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div><!-- # Faq item-->
-                            <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
-                                <h3 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#ROV-2">
-                                        <i class="bi bi-question-circle question-icon"></i>
-                                        ระดับมัธยมศึกษาตอนปลาย
-                                    </button>
-                                </h3>
-                                <div id="ROV-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                                    <div class="accordion-body">
-                                        <table class="table myTable">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="row">#</th>
-                                                    <th scope="col">รางวัล</th>
-                                                    <th scope="col">ชื่อ - นาสกุล</th>
-                                                    <th scope="col">ระดับชั้น</th>
-                                                    <th scope="col">เกียรติบัตร</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <?php $num_ROV = 0;
-                                                foreach ($values_ROV as $key => $v_values_ROV) : 
-                                                if($v_values_ROV[1] == "ระดับชั้นมัธยมศึกษาตอนปลาย"):
-                                                    $num_ROV += 1;
-                                                ?>
-                                                <tr>
-                                                    <th scope="row"><?=$num_ROV?></th>
-                                                    <th scope="row" style="width:30%"><?=$v_values_ROV[6];?></th>
-                                                    <td style="width:30%">
-                                                        <?=$v_values_ROV[2].' '.$v_values_ROV[3];?></td>
-                                                    <td><?=$v_values_ROV[4];?></td>
-                                                    <td> <a href="page-certificate.php?Key=<?=$v_values_ROV[0];?>"
+                                                        <?=@$v_values_ROV[2].' '.@$v_values_ROV[3];?></td>
+                                                    <td><?=@$v_values_ROV[4];?></td>
+                                                    <td> <a href="page-certificate.php?Key=<?=@$v_values_ROV[0];?>"
                                                             target="_blank" rel="noopener noreferrer">ดาวโหลด</a> </td>
                                                 </tr>
                                                 <?php endif;?>
@@ -737,15 +954,238 @@
 
                     </div>
 
-                    <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img"
-                        style='background-image: url(https://bacidea.com/wp-content/uploads/2019/07/RoV-New-Era-9_Logo.jpg);'>
-                        &nbsp;</div>
+
                 </div>
 
             </div>
         </section>
         <!-- End การแข่งขัน SKJ ROV -->
 
+        <!-- ======= การแข่งขันหุ่นยนต์ linetracing ======= -->
+        <section id="faq" class="faq">
+            <div class="container-fluid" data-aos="fade-up">
+                <div class="row gy-4 justify-content-center">
+                    <div
+                        class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+                        <div class="content px-xl-5">
+                            <h3>ผลการแข่งขัน <strong>หุ่นยนต์ ประเภท linetracing</strong></h3>
+
+                        </div>
+
+                        <div class="accordion accordion-flush px-xl-5" id="faqlist">
+                            <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#SpeedyQuiz-1">
+                                        <i class="bi bi-question-circle question-icon"></i>
+                                        ระดับมัธยมศึกษาตอนต้น (ม.1 - ม.3)
+                                    </button>
+                                </h3>
+                                <div id="SpeedyQuiz-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                    <div class="accordion-body">
+                                        <table class="table myTable">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="row">#</th>
+                                                    <th scope="col">รางวัล</th>
+                                                    <th scope="col">ชื่อ - นาสกุล</th>
+                                                    <th scope="col">ระดับชั้น</th>
+                                                    <th scope="col">เกียรติบัตร</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <?php $num_EGG = 0;
+                                                foreach ($values_linetracing as $key => $v_values_linetracing) : 
+                                                if(@$v_values_linetracing[1] == "ระดับชั้นมัธยมศึกษาตอนต้น"):
+                                                    $num_EGG += 1;
+                                                ?>
+                                                <tr>
+                                                    <th scope="row"><?=$num_EGG?></th>
+                                                    <th scope="row" style="width:30%"><?=@$v_values_linetracing[6];?>
+                                                    </th>
+                                                    <td style="width:30%">
+                                                        <?=@$v_values_linetracing[2].' '.@$v_values_linetracing[3];?>
+                                                    </td>
+                                                    <td><?=@$v_values_linetracing[4];?></td>
+                                                    <td> <a href="page-certificate.php?Key=<?=@$v_values_linetracing[0];?>"
+                                                            target="_blank" rel="noopener noreferrer">ดาวโหลด</a> </td>
+                                                </tr>
+                                                <?php endif;?>
+                                                <?php endforeach ;?>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div><!-- # Faq item-->
+                            <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#SpeedyQuiz-2">
+                                        <i class="bi bi-question-circle question-icon"></i>
+                                        ระดับมัธยมศึกษาตอนปลาย (ม.4 - ม.6)
+                                    </button>
+                                </h3>
+                                <div id="SpeedyQuiz-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                    <div class="accordion-body">
+                                        <table class="table myTable">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="row">#</th>
+                                                    <th scope="col">รางวัล</th>
+                                                    <th scope="col">ชื่อ - นาสกุล</th>
+                                                    <th scope="col">ระดับชั้น</th>
+                                                    <th scope="col">เกียรติบัตร</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <?php $num_EGG = 0;
+                                                foreach ($values_linetracing as $key => $v_values_linetracing) : 
+                                                if(@$v_values_linetracing[1] == "ระดับชั้นมัธยมศึกษาตอนปลาย"):
+                                                    $num_EGG += 1;
+                                                ?>
+                                                <tr>
+                                                    <th scope="row"><?=$num_EGG?></th>
+                                                    <th scope="row" style="width:30%"><?=@$v_values_linetracing[6];?>
+                                                    </th>
+                                                    <td style="width:30%">
+                                                        <?=@$v_values_linetracing[2].' '.@$v_values_linetracing[3];?>
+                                                    </td>
+                                                    <td><?=@$v_values_linetracing[4];?></td>
+                                                    <td> <a href="page-certificate.php?Key=<?=@$v_values_linetracing[0];?>"
+                                                            target="_blank" rel="noopener noreferrer">ดาวโหลด</a> </td>
+                                                </tr>
+                                                <?php endif;?>
+                                                <?php endforeach ;?>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div><!-- # Faq item-->
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- End การแข่งขันหุ่นยนต์ linetracing -->
+
+        <!-- ======= การแข่งขันหุ่นยนต์ linetracing Enhance ======= -->
+        <section id="faq" class="faq">
+            <div class="container-fluid" data-aos="fade-up">
+                <div class="row gy-4 justify-content-center">
+                    <div
+                        class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+                        <div class="content px-xl-5">
+                            <h3>ผลการแข่งขัน <strong>หุ่นยนต์ ประเภท linetracing Enhance</strong></h3>
+
+                        </div>
+
+                        <div class="accordion accordion-flush px-xl-5" id="faqlist">
+                            <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#SpeedyQuiz-1">
+                                        <i class="bi bi-question-circle question-icon"></i>
+                                        ระดับมัธยมศึกษาตอนต้น (ม.1 - ม.3)
+                                    </button>
+                                </h3>
+                                <div id="SpeedyQuiz-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                    <div class="accordion-body">
+                                        <table class="table myTable">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="row">#</th>
+                                                    <th scope="col">รางวัล</th>
+                                                    <th scope="col">ชื่อ - นาสกุล</th>
+                                                    <th scope="col">ระดับชั้น</th>
+                                                    <th scope="col">เกียรติบัตร</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <?php $num_EGG = 0;
+                                                foreach ($values_linetracingenhance as $key => $v_values_linetracingenhance) : 
+                                                if(@$v_values_linetracingenhance[1] == "ระดับชั้นมัธยมศึกษาตอนต้น"):
+                                                    $num_EGG += 1;
+                                                ?>
+                                                <tr>
+                                                    <th scope="row"><?=$num_EGG?></th>
+                                                    <th scope="row" style="width:30%">
+                                                        <?=@$v_values_linetracingenhance[6];?>
+                                                    </th>
+                                                    <td style="width:30%">
+                                                        <?=@$v_values_linetracingenhance[2].' '.@$v_values_linetracingenhance[3];?>
+                                                    </td>
+                                                    <td><?=@$v_values_linetracingenhance[4];?></td>
+                                                    <td> <a href="page-certificate.php?Key=<?=@$v_values_linetracingenhance[0];?>"
+                                                            target="_blank" rel="noopener noreferrer">ดาวโหลด</a> </td>
+                                                </tr>
+                                                <?php endif;?>
+                                                <?php endforeach ;?>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div><!-- # Faq item-->
+                            <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#SpeedyQuiz-2">
+                                        <i class="bi bi-question-circle question-icon"></i>
+                                        ระดับมัธยมศึกษาตอนปลาย (ม.4 - ม.6)
+                                    </button>
+                                </h3>
+                                <div id="SpeedyQuiz-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                    <div class="accordion-body">
+                                        <table class="table myTable">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="row">#</th>
+                                                    <th scope="col">รางวัล</th>
+                                                    <th scope="col">ชื่อ - นาสกุล</th>
+                                                    <th scope="col">ระดับชั้น</th>
+                                                    <th scope="col">เกียรติบัตร</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <?php $num_EGG = 0;
+                                                foreach ($values_linetracingenhance as $key => $v_values_linetracingenhance) : 
+                                                if(@$v_values_linetracingenhance[1] == "ระดับชั้นมัธยมศึกษาตอนปลาย"):
+                                                    $num_EGG += 1;
+                                                ?>
+                                                <tr>
+                                                    <th scope="row"><?=$num_EGG?></th>
+                                                    <th scope="row" style="width:30%">
+                                                        <?=@$v_values_linetracingenhance[6];?>
+                                                    </th>
+                                                    <td style="width:30%">
+                                                        <?=@$v_values_linetracingenhance[2].' '.@$v_values_linetracingenhance[3];?>
+                                                    </td>
+                                                    <td><?=@$v_values_linetracingenhance[4];?></td>
+                                                    <td> <a href="page-certificate.php?Key=<?=@$v_values_linetracingenhance[0];?>"
+                                                            target="_blank" rel="noopener noreferrer">ดาวโหลด</a> </td>
+                                                </tr>
+                                                <?php endif;?>
+                                                <?php endforeach ;?>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div><!-- # Faq item-->
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- End การแข่งขันหุ่นยนต์ Enhance -->
 
     </main>
     <!-- End #main -->

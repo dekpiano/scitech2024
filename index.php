@@ -388,7 +388,7 @@
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <a class="btn-primary  btn" tabindex="-1" role="button" aria-disabled="true"
-                                            target="_blank" href="https://docs.google.com/forms/u/0/d/11PDynNrxSWxklzr96NQhzo-5700K9M-Y6bhr6Z1Xnjs/viewform?edit_requested=true">สมัครแข่งขัน</a>
+                                            target="_blank" href="https://forms.gle/tVzFFEcTLMujjppk7">สมัครแข่งขัน</a>
                                     </div>
                                     <div class="col-lg-6">
                                         <a class="btn-secondary" target="_blank"
@@ -463,19 +463,21 @@
         <section id="cta" class="cta">
             <div class="container" data-aos="zoom-out">
 
-                <div class="row g-5">
+                <div class="row">
 
                     <div
-                        class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center order-last order-md-first">
-                        <h3>กำหนดการ<em>แข่งขัน</em></h3>
+                        class="col-lg-4 col-md-6 content d-flex flex-column justify-content-center order-last order-md-first">
+                        <h3>กำหนดการ<em>กิจกรรม</em></h3>
                         <!-- <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
-                        <a class="cta-btn align-self-start" href="#">ดูกำหนดการ</a>
+                        <a class="cta-btn align-self-start" target="_blank" href="file/กำหนดการวันวิทย์.pdf">ดูกำหนดการ</a>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 order-first order-md-last d-flex align-items-center">
+                    <div class="col-lg-8 col-md-6 order-first order-md-last d-flex align-items-center">
                         <div class="img">
                             <!-- <img src="img/banner-1.png" alt="" class="img-fluid"> -->
+                           
                         </div>
+                        <iframe src="file/กำหนดการวันวิทย์.pdf" width="100%" height="550" frameborder="0"></iframe>
                     </div>
 
                 </div>
