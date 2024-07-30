@@ -119,7 +119,7 @@
                     <li><a class="nav-link scrollto" href="index.php#cta">กำหนดการ</a></li>
                     <li><a class="nav-link scrollto" href="index.php#map">แผนผังงาน</a></li>
                     <li><a class="nav-link scrollto" href="index.php#recent-blog-posts">นิทรรศการ</a></li>
-                    <li><a class="nav-link scrollto" href="page-results.php">ผลการแข่งขัน</a></li>
+                    <li><a class="nav-link scrollto" href="page-results.php">ผลการแข่งขัน</a>  </li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle d-none"></i>
             </nav>
