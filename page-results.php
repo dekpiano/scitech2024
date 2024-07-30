@@ -150,7 +150,7 @@
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#Rocket-1">
                                         <i class="bi bi-question-circle question-icon"></i>
-                                        ระดับประถมศึกษาตอนปลาย (ป.4 - ป.6)
+                                        ระดับชั้นประถมศึกษาตอนปลาย (ป.4 - ป.6)
                                     </button>
                                 </h3>
                                 <div id="Rocket-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
@@ -169,7 +169,7 @@
                                             <tbody>
                                                 <?php $num_QT = 0;
                                                 foreach ($values_Rocket as $key => $v_values_Rocket) : 
-                                                if(@$v_values_Rocket[1] == "ระดับประถมศึกษาตอนปลาย"):
+                                                if(@$v_values_Rocket[1] == "ระดับชั้นประถมศึกษาตอนปลาย"):
                                                     $num_QT += 1;
                                                 ?>
                                                 <tr>
@@ -307,7 +307,7 @@
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#wad-1">
                                         <i class="bi bi-question-circle question-icon"></i>
-                                        ระดับประถมศึกษาตอนปลาย (ป.4 - ป.6)
+                                        ระดับชั้นประถมศึกษาตอนปลาย (ป.4 - ป.6)
                                     </button>
                                 </h3>
                                 <div id="wad-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
@@ -325,7 +325,7 @@
                                             <tbody>
                                                 <?php $num_WP = 0;
                                                 foreach ($values_Draw as $key => $v_values_Draw) : 
-                                                if(@$v_values_Draw[1] == "ระดับประถมศึกษาตอนปลาย"):
+                                                if(@$v_values_Draw[1] == "ระดับชั้นประถมศึกษาตอนปลาย"):
                                                     $num_WP += 1;
                                                 ?>
                                                 <tr>
@@ -499,7 +499,7 @@
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#BCG-1">
                                         <i class="bi bi-question-circle question-icon"></i>
-                                        ระดับประถมศึกษาตอนปลาย (ป.4 - ป.6)
+                                        ระดับชั้นประถมศึกษาตอนปลาย (ป.4 - ป.6)
                                     </button>
                                 </h3>
                                 <div id="BCG-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
@@ -517,7 +517,7 @@
                                             <tbody>
                                                 <?php $num_RE = 0;
                                                 foreach ($values_recycle as $key => $v_values_RE) : 
-                                                if(@$v_values_RE[1] == "ระดับประถมศึกษาตอนปลาย"):
+                                                if(@$v_values_RE[1] == "ระดับชั้นประถมศึกษาตอนปลาย"):
                                                     $num_RE += 1;
                                                 ?>
                                                 <tr>
