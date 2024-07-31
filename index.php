@@ -199,7 +199,7 @@
                                 </div>
                                 <!-- <a href="#" class="stretched-link"> -->
                                 <h3>การแข่งขันภาพวาดทางวิทยาศาสตร์</h3>
-                                <p class="text-danger">สามารถสมัครได้ 5 ทีม/โรงเรียน ทีมละ 3 คน</p>
+                                <p class="text-danger">สามารถสมัครได้ 5 ทีม/โรงเรียน ทีมละ 1 - 3 คน</p>
                                 <!-- </a> -->
                                 <a class="btn-primary w-100  btn" tabindex="-1" role="button" aria-disabled="true"
                                     target="_blank" href="https://forms.gle/j9dKNPd63g2M1ZX56"><i
@@ -434,7 +434,7 @@
                                     <i class="bi bi-activity"></i>
                                 </div>
                                 <!-- <a href="#" class="stretched-link"> -->
-                                <h3>การแข่งขัน 108 IQ</h3>
+                                <h3>การแข่งขัน 180 IQ</h3>
                                 <p class="text-danger">สามารถสมัครได้ ไม่จำกัด /โรงเรียน </p>
                                 <!-- </a> -->
                                 <a class="btn-primary w-100  btn" tabindex="-1" role="button" aria-disabled="true"
