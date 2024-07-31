@@ -114,7 +114,7 @@
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="nav-link scrollto" href="index.php#hero-animated">หน้าแรก</a></li>
+                    <li><a class="nav-link scrollto" href="index.php#hero-animated">หน้าแรก</a>  </li>
                     <li><a class="nav-link scrollto" href="index.php#services">กิจกรรมการแข่งขัน</a></li>
                     <li><a class="nav-link scrollto" href="index.php#cta">กำหนดการ</a></li>
                     <li><a class="nav-link scrollto" href="index.php#map">แผนผังงาน</a></li>
