@@ -1,3 +1,6 @@
+<?php 
+    $RegisOpen = "off";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -72,6 +75,17 @@
         background: #0d6efd;
     }
 
+    .btn-danger {
+        color: var(--color-white);
+        font-weight: 500;
+        font-size: 16px;
+        display: inline-block;
+        padding: 13px 23px;
+        border-radius: 5px;
+        transition: 0.5s;
+        margin-top: 10px;
+    }
+
     .btn-secondary {
         color: var(--color-white);
         font-weight: 500;
@@ -119,7 +133,7 @@
                     <li><a class="nav-link scrollto" href="index.php#cta">กำหนดการ</a></li>
                     <li><a class="nav-link scrollto" href="index.php#map">แผนผังงาน</a></li>
                     <li><a class="nav-link scrollto" href="index.php#recent-blog-posts">นิทรรศการ</a></li>
-                    <li><a class="nav-link scrollto" href="page-results.php">ผลการแข่งขัน</a>  </li>
+                    <li><a class="nav-link scrollto" href="page-results.php">ผลการแข่งขัน</a> </li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle d-none"></i>
             </nav>
@@ -148,6 +162,22 @@
         </div>
     </section>
 
+    <div class="container mt-5 mb-5">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center aos-init aos-animate" data-aos="fade-up">
+            <h1>ประกาศรายชื่อผู้เข้าร่วมเเข่งขัน</h1>
+            <!-- <p>We are team of talented designers making websites with Bootstrap</p> -->
+            <div class="d-flex">
+              <a href="#about" class="btn-primary">ดูรายชื่อการสมัคร</a>
+              
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 hero-img aos-init aos-animate" data-aos="zoom-out" data-aos-delay="100">
+            <img src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/values-2.png" class="img-fluid animated" alt="">
+          </div>
+        </div>
+      </div>
+
     <main id="main">
 
         <!-- ======= Services Section ======= -->
@@ -175,9 +205,15 @@
                                 <h3>การแข่งขันจรวดขวดน้ำ <br> ประเภทแม่นยำ</h3>
                                 <p class="text-danger">สามารถสมัครได้ 5 ทีม/โรงเรียน ทีมละ 3 คน</p>
                                 <!-- </a> -->
+                                <?php if($RegisOpen == "on"):?>
                                 <a class="btn-primary w-100  btn =" tabindex="-1" role="button" aria-disabled="true"
                                     target="_blank" href="https://forms.gle/zKt2mCpXjuf8g6oA9"><i
                                         class="bi bi-pencil-square"></i> สมัครแข่งขัน </a>
+                                <?php else : ?>
+                                    <a class="btn-danger w-100 disabled  btn =" tabindex="-1" role="button" aria-disabled="true"
+                                    target="_blank" href="https://forms.gle/zKt2mCpXjuf8g6oA9"><i
+                                        class="bi bi-pencil-square"></i> ปิดรับสมัครแข่งขัน </a>                               
+                                <?php endif; ?>
                                 <div class="d-flex justify-content-around gap-2">
                                     <a class="btn-secondary w-100" target="_blank"
                                         href="https://docs.google.com/document/d/1-YVLxmfC_p8gL9qJ6B7Fpk3vu3K0oe6X/edit?usp=drive_link&ouid=108470401055852821871&rtpof=true&sd=true"><i
@@ -201,18 +237,23 @@
                                 <h3>การแข่งขันภาพวาดทางวิทยาศาสตร์</h3>
                                 <p class="text-danger">สามารถสมัครได้ 5 ทีม/โรงเรียน ทีมละ 1 - 3 คน</p>
                                 <!-- </a> -->
+                                <?php if($RegisOpen == "on"):?>
                                 <a class="btn-primary w-100  btn" tabindex="-1" role="button" aria-disabled="true"
                                     target="_blank" href="https://forms.gle/j9dKNPd63g2M1ZX56"><i
                                         class="bi bi-pencil-square"></i> สมัครแข่งขัน </a>
+                                <?php else : ?>
+                                    <a class="btn-danger w-100 disabled  btn =" tabindex="-1" role="button" aria-disabled="true"
+                                    target="_blank" href="https://forms.gle/zKt2mCpXjuf8g6oA9"><i
+                                        class="bi bi-pencil-square"></i> ปิดรับสมัครแข่งขัน </a>
+                                <?php endif; ?>
                                 <div class="d-flex justify-content-around gap-2">
 
                                     <a class="btn-secondary w-100" target="_blank"
                                         href="https://docs.google.com/document/d/1-bZYjr6lwzsSTWxV5o8RrbEBdTEKVHeQ/edit?usp=drive_link&ouid=108470401055852821871&rtpof=true&sd=true"><i
                                             class="bi bi-file-earmark-text-fill"></i> กติกา</a>
-                                    <a class="btn-success w-100 glightbox"
-                                    href="img/qr-code/8741.jpg"><i
+                                    <a class="btn-success w-100 glightbox" href="img/qr-code/8741.jpg"><i
                                             class="bi bi-line"></i> กลุ่ม Line</a>
-                                            
+
                                 </div>
                             </div>
                         </div>
@@ -232,16 +273,21 @@
                                 <p class="text-danger">สามารถสมัครได้ 2 ทีม/โรงเรียน ทีมละ 1 คน <br>(ระดับประถมศึกษา
                                     เเละ ระดับมัธยมศึกษาตอนต้น)</p>
                                 <!-- </a> -->
+                                <?php if($RegisOpen == "on"):?>
                                 <a class="btn-primary w-100  btn" tabindex="-1" role="button" aria-disabled="true"
                                     target="_blank" href="https://forms.gle/rDrdLujKFZBBhT8R6"><i
                                         class="bi bi-pencil-square"></i> สมัครแข่งขัน </a>
+                                <?php else : ?>
+                                    <a class="btn-danger w-100 disabled  btn =" tabindex="-1" role="button" aria-disabled="true"
+                                    target="_blank" href="https://forms.gle/zKt2mCpXjuf8g6oA9"><i
+                                        class="bi bi-pencil-square"></i> ปิดรับสมัครแข่งขัน </a>
+                                <?php endif; ?>
                                 <div class="d-flex justify-content-around gap-2">
 
                                     <a class="btn-secondary w-100" target="_blank"
                                         href="https://docs.google.com/document/d/1-iQUuKncD3hiPOzCPNh_XyXfDb1oVooN/edit?usp=drive_link&ouid=108470401055852821871&rtpof=true&sd=true"><i
                                             class="bi bi-file-earmark-text-fill"></i> กติกา</a>
-                                            <a class="btn-success w-100 glightbox"
-                                    href="img/qr-code/8743.jpg"><i
+                                    <a class="btn-success w-100 glightbox" href="img/qr-code/8743.jpg"><i
                                             class="bi bi-line"></i> กลุ่ม Line</a>
                                 </div>
                             </div>
@@ -261,16 +307,21 @@
                                 <h3>การแข่งขัน Science Cover Dance </h3>
                                 <p class="text-danger">สามารถสมัครได้ 3 ทีม/โรงเรียน ทีมละ 5-8 คน</p>
                                 <!-- </a> -->
+                                <?php if($RegisOpen == "on"):?>
                                 <a class="btn-primary w-100  btn" tabindex="-1" role="button" aria-disabled="true"
                                     target="_blank" href="https://forms.gle/oSKMftq5UAVbcdCb8"><i
                                         class="bi bi-pencil-square"></i> สมัครแข่งขัน </a>
+                                <?php else : ?>
+                                    <a class="btn-danger w-100 disabled  btn =" tabindex="-1" role="button" aria-disabled="true"
+                                    target="_blank" href="https://forms.gle/zKt2mCpXjuf8g6oA9"><i
+                                        class="bi bi-pencil-square"></i> ปิดรับสมัครแข่งขัน </a>
+                                <?php endif; ?>
                                 <div class="d-flex justify-content-around gap-2">
 
                                     <a class="btn-secondary w-100" target="_blank"
                                         href="https://docs.google.com/document/d/1-nHCnb89CY6drPo43mmQa6GLVm00Qscy/edit?usp=drive_link&ouid=108470401055852821871&rtpof=true&sd=true"><i
                                             class="bi bi-file-earmark-text-fill"></i> กติกา</a>
-                                            <a class="btn-success w-100 glightbox"
-                                    href="img/qr-code/8738.jpg"><i
+                                    <a class="btn-success w-100 glightbox" href="img/qr-code/8738.jpg"><i
                                             class="bi bi-line"></i> กลุ่ม Line</a>
                                 </div>
                             </div>
@@ -291,10 +342,15 @@
                                 <h3>การแข่งขันถามไว ตอบไว (Speedy quiz)</h3>
                                 <p class="text-danger">สามารถสมัครได้ 2 ทีม/โรงเรียน ทีมละ 2 คน</p>
                                 <!-- </a> -->
-
+                                <?php if($RegisOpen == "on"):?>
                                 <a class="btn-primary w-100 btn w-100" tabindex="-1" role="button" aria-disabled="true"
                                     target="_blank" href="https://forms.gle/NR4uq84mzLj2xKio9"><i
                                         class="bi bi-pencil-square"></i> สมัครแข่งขัน </a>
+                                <?php else : ?>
+                                    <a class="btn-danger w-100 disabled  btn =" tabindex="-1" role="button" aria-disabled="true"
+                                    target="_blank" href="https://forms.gle/zKt2mCpXjuf8g6oA9"><i
+                                        class="bi bi-pencil-square"></i> ปิดรับสมัครแข่งขัน </a>
+                                <?php endif; ?>
 
 
                                 <div class="d-flex justify-content-around gap-2">
@@ -302,8 +358,7 @@
                                     <a class="btn-secondary w-100 w-100" target="_blank"
                                         href="https://docs.google.com/document/d/1-pPx6oIpxnXwySE7MfcdNIIMQUZPFvLK/edit?usp=drive_link&ouid=108470401055852821871&rtpof=true&sd=true"><i
                                             class="bi bi-file-earmark-text-fill"></i> กติกา</a>
-                                            <a class="btn-success w-100 glightbox"
-                                    href="img/qr-code/8735.jpg"><i
+                                    <a class="btn-success w-100 glightbox" href="img/qr-code/8735.jpg"><i
                                             class="bi bi-line"></i> กลุ่ม Line</a>
                                 </div>
                             </div>
@@ -324,15 +379,20 @@
                                 <h3>การแข่งขันกีฬา E-Sports ROV</h3>
                                 <p class="text-danger">สามารถสมัครได้ 4 ทีม/โรงเรียน ทีมละ 5-6 คน</p>
                                 <!-- </a> -->
+                                <?php if($RegisOpen == "on"):?>
                                 <a class="btn-primary w-100  btn" tabindex="-1" role="button" aria-disabled="true"
                                     target="_blank" href="https://forms.gle/MRCHWASqVweVzYFF9"><i
                                         class="bi bi-pencil-square"></i> สมัครแข่งขัน </a>
+                                <?php else : ?>
+                                    <a class="btn-danger w-100 disabled  btn =" tabindex="-1" role="button" aria-disabled="true"
+                                    target="_blank" href="https://forms.gle/zKt2mCpXjuf8g6oA9"><i
+                                        class="bi bi-pencil-square"></i> ปิดรับสมัครแข่งขัน </a>
+                                <?php endif; ?>
                                 <div class="d-flex justify-content-around gap-2">
                                     <a class="btn-secondary w-100" target="_blank"
                                         href="https://docs.google.com/document/d/1-rfm1hvTQG0ALf2U5BdcFVBGEEKR-kSF/edit?usp=drive_link&ouid=108470401055852821871&rtpof=true&sd=true"><i
                                             class="bi bi-file-earmark-text-fill"></i> กติกา</a>
-                                            <a class="btn-success w-100 glightbox"
-                                    href="img/qr-code/rov.jpg"><i
+                                    <a class="btn-success w-100 glightbox" href="img/qr-code/rov.jpg"><i
                                             class="bi bi-line"></i> กลุ่ม Line</a>
                                 </div>
 
@@ -353,9 +413,15 @@
                                 <!-- <a href="#" class="stretched-link"> -->
                                 <h3>การแข่งขันหุ่นยนต์ ประเภท line tracing</h3>
                                 <!-- </a> -->
+                                <?php if($RegisOpen == "on"):?>
                                 <a class="btn-primary w-100  btn" tabindex="-1" role="button" aria-disabled="true"
                                     target="_blank" href="https://forms.gle/BVodz3USBDHdEkQa6"><i
                                         class="bi bi-pencil-square"></i> สมัครแข่งขัน </a>
+                                <?php else : ?>
+                                    <a class="btn-danger w-100 disabled  btn =" tabindex="-1" role="button" aria-disabled="true"
+                                    target="_blank" href="https://forms.gle/zKt2mCpXjuf8g6oA9"><i
+                                        class="bi bi-pencil-square"></i> ปิดรับสมัครแข่งขัน </a>
+                                <?php endif; ?>
                                 <div class="d-flex justify-content-around">
 
                                     <a class="btn-secondary w-100" target="_blank"
@@ -379,9 +445,15 @@
                                 <!-- <a href="#" class="stretched-link"> -->
                                 <h3>การแข่งขันหุ่นยนต์ ประเภท line tracing enhance</h3>
                                 <!-- </a> -->
+                                <?php if($RegisOpen == "on"):?>
                                 <a class="btn-primary w-100  btn" tabindex="-1" role="button" aria-disabled="true"
                                     target="_blank" href="https://forms.gle/LmfnemrLmGJRkkVEA"><i
                                         class="bi bi-pencil-square"></i> สมัครแข่งขัน </a>
+                                <?php else : ?>
+                                    <a class="btn-danger w-100 disabled  btn =" tabindex="-1" role="button" aria-disabled="true"
+                                    target="_blank" href="https://forms.gle/zKt2mCpXjuf8g6oA9"><i
+                                        class="bi bi-pencil-square"></i> ปิดรับสมัครแข่งขัน </a>
+                                <?php endif; ?>
                                 <div class="d-flex justify-content-around">
                                     <a class="btn-secondary w-100" target="_blank"
                                         href="https://docs.google.com/document/d/1-wwKgv8CXbWe1kEeRbZ7gAmsdjZ5I0Pg/edit?usp=drive_link&ouid=108470401055852821871&rtpof=true&sd=true"><i
@@ -412,9 +484,15 @@
                                 <h3>การแข่งขันรูบิค (Rubik)</h3>
                                 <p class="text-danger">สามารถสมัครได้ ไม่จำกัด /โรงเรียน </p>
                                 <!-- </a> -->
+                                <?php if($RegisOpen == "on"):?>
                                 <a class="btn-primary w-100  btn" tabindex="-1" role="button" aria-disabled="true"
                                     target="_blank" href="https://forms.gle/tVzFFEcTLMujjppk7"><i
                                         class="bi bi-pencil-square"></i> สมัครแข่งขัน </a>
+                                <?php else : ?>
+                                    <a class="btn-danger w-100 disabled  btn =" tabindex="-1" role="button" aria-disabled="true"
+                                    target="_blank" href="https://forms.gle/zKt2mCpXjuf8g6oA9"><i
+                                        class="bi bi-pencil-square"></i> ปิดรับสมัครแข่งขัน </a>
+                                <?php endif; ?>
                                 <a class="btn-secondary w-100" target="_blank"
                                     href="https://docs.google.com/document/d/1zXqtrpXEb1K03-3ODCeAeH4nKxqC75BK/edit?usp=sharing&ouid=108470401055852821871&rtpof=true&sd=true"><i
                                         class="bi bi-file-earmark-text-fill"></i> กติกา</a>
@@ -437,10 +515,16 @@
                                 <h3>การแข่งขัน 180 IQ</h3>
                                 <p class="text-danger">สามารถสมัครได้ ไม่จำกัด /โรงเรียน </p>
                                 <!-- </a> -->
+                                <?php if($RegisOpen == "on"):?>
                                 <a class="btn-primary w-100  btn" tabindex="-1" role="button" aria-disabled="true"
                                     target="_blank"
                                     href="https://docs.google.com/forms/u/0/d/19JDhG0GfSE1HQfgHmuPndqfnJlAAfSRQKNZZivch2DQ/viewform?edit_requested=true"><i
                                         class="bi bi-pencil-square"></i> สมัครแข่งขัน </a>
+                                <?php else : ?>
+                                    <a class="btn-danger w-100 disabled  btn =" tabindex="-1" role="button" aria-disabled="true"
+                                    target="_blank" href="https://forms.gle/zKt2mCpXjuf8g6oA9"><i
+                                        class="bi bi-pencil-square"></i> ปิดรับสมัครแข่งขัน </a>
+                                <?php endif; ?>
                                 <a class="btn-secondary w-100" target="_blank"
                                     href="https://docs.google.com/document/d/15rvvdqeKFcRwV-MqRTUY1lh4u3TXholr/edit?usp=sharing&ouid=108470401055852821871&rtpof=true&sd=true"><i
                                         class="bi bi-file-earmark-text-fill"></i> กติกา</a>
@@ -463,22 +547,28 @@
                                 <h3>การแข่งขัน เกม 24</h3>
                                 <p class="text-danger">สามารถสมัครได้ ไม่จำกัด /โรงเรียน </p>
                                 <!-- </a> -->
+                                <?php if($RegisOpen == "on"):?>
                                 <a class="btn-primary w-100  btn" tabindex="-1" role="button" aria-disabled="true"
                                     target="_blank"
                                     href="https://docs.google.com/forms/u/0/d/11PDynNrxSWxklzr96NQhzo-5700K9M-Y6bhr6Z1Xnjs/viewform?edit_requested=true"><i
                                         class="bi bi-pencil-square"></i> สมัครแข่งขัน </a>
-                              
-                                    <a class="btn-secondary w-100" target="_blank"
-                                        href="https://docs.google.com/document/d/12MjHTuhl5H4MIERoB1ryBjciuc1DvuOq/edit?usp=sharing&ouid=108470401055852821871&rtpof=true&sd=true"><i
-                                            class="bi bi-file-earmark-text-fill"></i> กติกา</a>
+                                <?php else : ?>
+                                    <a class="btn-danger w-100 disabled  btn =" tabindex="-1" role="button" aria-disabled="true"
+                                    target="_blank" href="https://forms.gle/zKt2mCpXjuf8g6oA9"><i
+                                        class="bi bi-pencil-square"></i> ปิดรับสมัครแข่งขัน </a>
+                                <?php endif; ?>
 
-                                </div>
+                                <a class="btn-secondary w-100" target="_blank"
+                                    href="https://docs.google.com/document/d/12MjHTuhl5H4MIERoB1ryBjciuc1DvuOq/edit?usp=sharing&ouid=108470401055852821871&rtpof=true&sd=true"><i
+                                        class="bi bi-file-earmark-text-fill"></i> กติกา</a>
+
                             </div>
                         </div>
-
                     </div>
 
                 </div>
+
+            </div>
         </section>
         <!-- End Services Section -->
 
@@ -700,28 +790,28 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
     <script>
-        const lightbox = GLightbox();
+    const lightbox = GLightbox();
     </script>
 </body>
 
 <script>
-Swal.fire({
-    title: "<h1>ขยายเวลารับสมัครแข่งขัน  <br> งานสัปดาห์วิทยาศาสตร์ <br>ตั้งเเต่ 27 ก.ค. - 2 ส.ค. 2567 นี้</h1> ",
-    icon: "success",
-    confirmButtonColor: "#05c46b",
-    confirmButtonText: "รับทราบ",
-    footer: 'ประกาศรายชื่อผู้เข้าร่วมเเข่งขัน วันที่ 3 ส.ค. 2567',
-    width: 700,
-    padding: "1em",
-    color: "#05c46b",
-    background: "#fff url(/images/trees.png)",
-    backdrop: `
-    rgba(147, 250, 165,0.4)
-    url("/images/nyan-cat.gif")
-    left top
-    no-repeat
-  `
-});
+// Swal.fire({
+//     title: "<h1>ขยายเวลารับสมัครแข่งขัน  <br> งานสัปดาห์วิทยาศาสตร์ <br>ตั้งเเต่ 27 ก.ค. - 2 ส.ค. 2567 นี้</h1> ",
+//     icon: "success",
+//     confirmButtonColor: "#05c46b",
+//     confirmButtonText: "รับทราบ",
+//     footer: 'ประกาศรายชื่อผู้เข้าร่วมเเข่งขัน วันที่ 3 ส.ค. 2567',
+//     width: 700,
+//     padding: "1em",
+//     color: "#05c46b",
+//     background: "#fff url(/images/trees.png)",
+//     backdrop: `
+//     rgba(147, 250, 165,0.4)
+//     url("/images/nyan-cat.gif")
+//     left top
+//     no-repeat
+//   `
+// });
 </script>
 
 </html>
