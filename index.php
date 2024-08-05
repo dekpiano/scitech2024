@@ -109,6 +109,19 @@
         margin-top: 10px;
         background: #198754;
     }
+
+    .cta-btn {
+        color: var(--color-white);
+        font-weight: 500;
+        font-size: 16px;
+        display: inline-block;
+        padding: 12px 40px;
+        border-radius: 5px;
+        transition: 0.5s;
+        margin-top: 10px;
+        background: rgba(var(--color-primary-dark-rgb), 0.9);
+        width: fit-content;
+    }
     </style>
 </head>
 
@@ -162,21 +175,50 @@
         </div>
     </section>
 
-    <div class="container mt-5 mb-5">
-        <div class="row gy-4">
-          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center aos-init aos-animate" data-aos="fade-up">
-            <h1>ประกาศรายชื่อผู้เข้าร่วมเเข่งขัน</h1>
-            <!-- <p>We are team of talented designers making websites with Bootstrap</p> -->
-            <div class="d-flex">
-              <a href="#about" class="btn-primary">ดูรายชื่อการสมัคร</a>
-              
+    <div class="" style="padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
+    background-color: #ddfff3;">
+        <div class="row gy-4 gx-0">
+            <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center aos-init aos-animate"
+                data-aos="fade-up">
+                <h1 class="text-lg-end text-center">ประกาศรายชื่อผู้เข้าร่วมเเข่งขัน</h1>
+                <!-- <p>We are team of talented designers making websites with Bootstrap</p> -->
+                <div class="text-lg-end text-center">
+                    <a target="_blank"
+                        href="https://drive.google.com/drive/folders/1YRTP0EBOC-8ugNzWHTjQHsxdI6xsoJx5?usp=sharing"
+                        class="cta-btn ">ดูรายชื่อการสมัคร</a>
+                </div>
             </div>
-          </div>
-          <div class="col-lg-6 order-1 order-lg-2 hero-img aos-init aos-animate" data-aos="zoom-out" data-aos-delay="100">
-            <img src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/values-2.png" class="img-fluid animated" alt="">
-          </div>
+            <div class="col-lg-6 order-1 order-lg-2 hero-img aos-init aos-animate" data-aos="zoom-out"
+                data-aos-delay="100" style="mix-blend-mode: multiply;">
+                <img src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/values-2.png"
+                    class="img-fluid animated" alt="">
+            </div>
         </div>
-      </div>
+    </div>
+
+    <div class="" style="padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
+    background-color: #e9e9e9;">
+        <div class="row gy-4 gx-0">
+            <div class="col-lg-6 order-2 order-lg-1 hero-img aos-init aos-animate" data-aos="zoom-out"
+                data-aos-delay="100">
+                <img src="img/undraw_open_note_gwm9.svg"
+                    class="img-fluid animated" alt="">
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 d-flex flex-column justify-content-center aos-init aos-animate"
+                data-aos="fade-up">
+                <h1 class="text-lg-start text-center">ลำดับการขึ้นแข่งขันแต่ละรายการ</h1>
+                <!-- <p>We are team of talented designers making websites with Bootstrap</p> -->
+                <div class="text-lg-start text-center">
+                    <a target="_blank"
+                        href="https://drive.google.com/drive/folders/1GSK_BsHDYcHyr1Ng31k1wyqDK6QqXGox?usp=sharing"
+                        class="cta-btn ">ดูลำดับการแข่งขัน</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
     <main id="main">
 
@@ -210,9 +252,9 @@
                                     target="_blank" href="https://forms.gle/zKt2mCpXjuf8g6oA9"><i
                                         class="bi bi-pencil-square"></i> สมัครแข่งขัน </a>
                                 <?php else : ?>
-                                    <a class="btn-danger w-100 disabled  btn =" tabindex="-1" role="button" aria-disabled="true"
-                                    target="_blank" href="https://forms.gle/zKt2mCpXjuf8g6oA9"><i
-                                        class="bi bi-pencil-square"></i> ปิดรับสมัครแข่งขัน </a>                               
+                                <a class="btn-danger w-100 disabled  btn =" tabindex="-1" role="button"
+                                    aria-disabled="true" target="_blank" href="https://forms.gle/zKt2mCpXjuf8g6oA9"><i
+                                        class="bi bi-pencil-square"></i> ปิดรับสมัครแข่งขัน </a>
                                 <?php endif; ?>
                                 <div class="d-flex justify-content-around gap-2">
                                     <a class="btn-secondary w-100" target="_blank"
@@ -242,8 +284,8 @@
                                     target="_blank" href="https://forms.gle/j9dKNPd63g2M1ZX56"><i
                                         class="bi bi-pencil-square"></i> สมัครแข่งขัน </a>
                                 <?php else : ?>
-                                    <a class="btn-danger w-100 disabled  btn =" tabindex="-1" role="button" aria-disabled="true"
-                                    target="_blank" href="https://forms.gle/zKt2mCpXjuf8g6oA9"><i
+                                <a class="btn-danger w-100 disabled  btn =" tabindex="-1" role="button"
+                                    aria-disabled="true" target="_blank" href="https://forms.gle/zKt2mCpXjuf8g6oA9"><i
                                         class="bi bi-pencil-square"></i> ปิดรับสมัครแข่งขัน </a>
                                 <?php endif; ?>
                                 <div class="d-flex justify-content-around gap-2">
@@ -278,8 +320,8 @@
                                     target="_blank" href="https://forms.gle/rDrdLujKFZBBhT8R6"><i
                                         class="bi bi-pencil-square"></i> สมัครแข่งขัน </a>
                                 <?php else : ?>
-                                    <a class="btn-danger w-100 disabled  btn =" tabindex="-1" role="button" aria-disabled="true"
-                                    target="_blank" href="https://forms.gle/zKt2mCpXjuf8g6oA9"><i
+                                <a class="btn-danger w-100 disabled  btn =" tabindex="-1" role="button"
+                                    aria-disabled="true" target="_blank" href="https://forms.gle/zKt2mCpXjuf8g6oA9"><i
                                         class="bi bi-pencil-square"></i> ปิดรับสมัครแข่งขัน </a>
                                 <?php endif; ?>
                                 <div class="d-flex justify-content-around gap-2">
@@ -312,8 +354,8 @@
                                     target="_blank" href="https://forms.gle/oSKMftq5UAVbcdCb8"><i
                                         class="bi bi-pencil-square"></i> สมัครแข่งขัน </a>
                                 <?php else : ?>
-                                    <a class="btn-danger w-100 disabled  btn =" tabindex="-1" role="button" aria-disabled="true"
-                                    target="_blank" href="https://forms.gle/zKt2mCpXjuf8g6oA9"><i
+                                <a class="btn-danger w-100 disabled  btn =" tabindex="-1" role="button"
+                                    aria-disabled="true" target="_blank" href="https://forms.gle/zKt2mCpXjuf8g6oA9"><i
                                         class="bi bi-pencil-square"></i> ปิดรับสมัครแข่งขัน </a>
                                 <?php endif; ?>
                                 <div class="d-flex justify-content-around gap-2">
@@ -347,8 +389,8 @@
                                     target="_blank" href="https://forms.gle/NR4uq84mzLj2xKio9"><i
                                         class="bi bi-pencil-square"></i> สมัครแข่งขัน </a>
                                 <?php else : ?>
-                                    <a class="btn-danger w-100 disabled  btn =" tabindex="-1" role="button" aria-disabled="true"
-                                    target="_blank" href="https://forms.gle/zKt2mCpXjuf8g6oA9"><i
+                                <a class="btn-danger w-100 disabled  btn =" tabindex="-1" role="button"
+                                    aria-disabled="true" target="_blank" href="https://forms.gle/zKt2mCpXjuf8g6oA9"><i
                                         class="bi bi-pencil-square"></i> ปิดรับสมัครแข่งขัน </a>
                                 <?php endif; ?>
 
@@ -384,8 +426,8 @@
                                     target="_blank" href="https://forms.gle/MRCHWASqVweVzYFF9"><i
                                         class="bi bi-pencil-square"></i> สมัครแข่งขัน </a>
                                 <?php else : ?>
-                                    <a class="btn-danger w-100 disabled  btn =" tabindex="-1" role="button" aria-disabled="true"
-                                    target="_blank" href="https://forms.gle/zKt2mCpXjuf8g6oA9"><i
+                                <a class="btn-danger w-100 disabled  btn =" tabindex="-1" role="button"
+                                    aria-disabled="true" target="_blank" href="https://forms.gle/zKt2mCpXjuf8g6oA9"><i
                                         class="bi bi-pencil-square"></i> ปิดรับสมัครแข่งขัน </a>
                                 <?php endif; ?>
                                 <div class="d-flex justify-content-around gap-2">
@@ -418,8 +460,8 @@
                                     target="_blank" href="https://forms.gle/BVodz3USBDHdEkQa6"><i
                                         class="bi bi-pencil-square"></i> สมัครแข่งขัน </a>
                                 <?php else : ?>
-                                    <a class="btn-danger w-100 disabled  btn =" tabindex="-1" role="button" aria-disabled="true"
-                                    target="_blank" href="https://forms.gle/zKt2mCpXjuf8g6oA9"><i
+                                <a class="btn-danger w-100 disabled  btn =" tabindex="-1" role="button"
+                                    aria-disabled="true" target="_blank" href="https://forms.gle/zKt2mCpXjuf8g6oA9"><i
                                         class="bi bi-pencil-square"></i> ปิดรับสมัครแข่งขัน </a>
                                 <?php endif; ?>
                                 <div class="d-flex justify-content-around">
@@ -450,8 +492,8 @@
                                     target="_blank" href="https://forms.gle/LmfnemrLmGJRkkVEA"><i
                                         class="bi bi-pencil-square"></i> สมัครแข่งขัน </a>
                                 <?php else : ?>
-                                    <a class="btn-danger w-100 disabled  btn =" tabindex="-1" role="button" aria-disabled="true"
-                                    target="_blank" href="https://forms.gle/zKt2mCpXjuf8g6oA9"><i
+                                <a class="btn-danger w-100 disabled  btn =" tabindex="-1" role="button"
+                                    aria-disabled="true" target="_blank" href="https://forms.gle/zKt2mCpXjuf8g6oA9"><i
                                         class="bi bi-pencil-square"></i> ปิดรับสมัครแข่งขัน </a>
                                 <?php endif; ?>
                                 <div class="d-flex justify-content-around">
@@ -489,8 +531,8 @@
                                     target="_blank" href="https://forms.gle/tVzFFEcTLMujjppk7"><i
                                         class="bi bi-pencil-square"></i> สมัครแข่งขัน </a>
                                 <?php else : ?>
-                                    <a class="btn-danger w-100 disabled  btn =" tabindex="-1" role="button" aria-disabled="true"
-                                    target="_blank" href="https://forms.gle/zKt2mCpXjuf8g6oA9"><i
+                                <a class="btn-danger w-100 disabled  btn =" tabindex="-1" role="button"
+                                    aria-disabled="true" target="_blank" href="https://forms.gle/zKt2mCpXjuf8g6oA9"><i
                                         class="bi bi-pencil-square"></i> ปิดรับสมัครแข่งขัน </a>
                                 <?php endif; ?>
                                 <a class="btn-secondary w-100" target="_blank"
@@ -521,8 +563,8 @@
                                     href="https://docs.google.com/forms/u/0/d/19JDhG0GfSE1HQfgHmuPndqfnJlAAfSRQKNZZivch2DQ/viewform?edit_requested=true"><i
                                         class="bi bi-pencil-square"></i> สมัครแข่งขัน </a>
                                 <?php else : ?>
-                                    <a class="btn-danger w-100 disabled  btn =" tabindex="-1" role="button" aria-disabled="true"
-                                    target="_blank" href="https://forms.gle/zKt2mCpXjuf8g6oA9"><i
+                                <a class="btn-danger w-100 disabled  btn =" tabindex="-1" role="button"
+                                    aria-disabled="true" target="_blank" href="https://forms.gle/zKt2mCpXjuf8g6oA9"><i
                                         class="bi bi-pencil-square"></i> ปิดรับสมัครแข่งขัน </a>
                                 <?php endif; ?>
                                 <a class="btn-secondary w-100" target="_blank"
@@ -553,8 +595,8 @@
                                     href="https://docs.google.com/forms/u/0/d/11PDynNrxSWxklzr96NQhzo-5700K9M-Y6bhr6Z1Xnjs/viewform?edit_requested=true"><i
                                         class="bi bi-pencil-square"></i> สมัครแข่งขัน </a>
                                 <?php else : ?>
-                                    <a class="btn-danger w-100 disabled  btn =" tabindex="-1" role="button" aria-disabled="true"
-                                    target="_blank" href="https://forms.gle/zKt2mCpXjuf8g6oA9"><i
+                                <a class="btn-danger w-100 disabled  btn =" tabindex="-1" role="button"
+                                    aria-disabled="true" target="_blank" href="https://forms.gle/zKt2mCpXjuf8g6oA9"><i
                                         class="bi bi-pencil-square"></i> ปิดรับสมัครแข่งขัน </a>
                                 <?php endif; ?>
 
